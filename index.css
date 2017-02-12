@@ -1,0 +1,12 @@
+body  {
+	background-image: url("food3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbotron {
+    margin: 0 auto;
+	text-align: center;
+    border-radius: 25px;
+	width: 60%;
+}
