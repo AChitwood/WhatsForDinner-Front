@@ -1,12 +1,10 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <div class="jumbotron">
-
-            <h1>Home Page</h1>
-            <p>{{ message }}</p>
-
-    <div class="container">
-
+    <div ng-init="logo='images/logo.png'">
+        <img ng-src="{{logo}}" height="350" width="350">
+    </div>
+<div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-3">
             <form action="" class="search-form">
@@ -19,9 +17,4 @@
         </div>
     </div>
 </div>
-
-    <div ng-init="logo='images/logo.png'">
-        <img ng-src="{{logo}}" height="350" width="350">
-    </div>
-
 </div>
