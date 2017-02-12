@@ -21,10 +21,18 @@
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
+			})
+        .when('/login', {
+				templateUrl : 'pages/login.html',
+				controller  : 'loginController'
 			});
 	});
 
 	// create the controller and inject Angular's $scope
+    wfd.controller('loginController', function($scope) {
+		// create a message to display in our view
+		$scope.message = 'Login Page';
+	});
 	wfd.controller('mainController', function($scope) {
 		// create a message to display in our view
 		$scope.message = 'Welcome to our Capstone web page application, What\'s for dinner!';
