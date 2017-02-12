@@ -52,7 +52,7 @@ body  {
 .search-form .form-group span.form-control-feedback {
   position: absolute;
   top: -1px;
-  right: -2px;
+  right: 14px;
   z-index: 2;
   display: block;
   width: 34px;
