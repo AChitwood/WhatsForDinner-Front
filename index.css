@@ -6,6 +6,11 @@ body  {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.homepage{
+     margin: 0 auto;
+	text-align: center;
+    width: 60%;
+}
 
 .jumbotron {
 
