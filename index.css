@@ -15,13 +15,36 @@ body {
     resize: none;
 }
 
-#image {
-    height: 75%;
-    width: 100%;
+#titles h1 {
+    background-image: url(/images/title1.png);
+    background-size: 280px;
+    background-color: #e6d8ba;
+    margin: 500px;
+    margin-top: -19px;
+    margin-right: 24px;
     position: fixed;
-    bottom: 165px;
-    background-image: url(/images/food7.jpg);
-    background-size: cover;
+    width: 23%;
+    height: 117px;
+    display: -webkit-inline-box;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#titles h2 {
+    background-image: url(/images/title1.png);
+    border-bottom-left-radius: 82px;
+    border-bottom-right-radius: 82px;
+    background-size: 280px;
+    background-color: #e6d8ba;
+    margin: 500px;
+    margin-top: -19px;
+    margin-right: 24px;
+    position: fixed;
+    width: 23%;
+    z-index: 8;
+    height: 200px;
+    display: -webkit-inline-box;
+    cursor: pointer;
 }
 
 #container {
@@ -31,27 +54,10 @@ body {
     height: 100px;
     background: #2e3601;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     position: fixed;
     color: whitesmoke;
     font-family: 'EB Garamond', serif;
-}
-
-#titles header {
-    background-image: url(/images/title1.png);
-    border-bottom-left-radius: 82px;
-    border-bottom-right-radius: 82px;
-    background-size: 284px;
-    background-color: #e6d8ba;
-    margin: 500px;
-    margin-top: -19px;
-    margin-right: 24px;
-    position: fixed;
-    width: 23%;
-    height: 200px;
-    display: -webkit-inline-box;
-    cursor: pointer;
-    z-index: 99999;
 }
 
 #container ul {
@@ -97,7 +103,17 @@ body {
     position: relative;
     top: 490px;
     height: 1500px;
+    z-index: 9;
     background: #e6d8ba;
+}
+
+#image {
+    height: 75%;
+    width: 100%;
+    position: fixed;
+    bottom: 165px;
+    background-image: url(/images/food7.jpg);
+    background-size: cover;
 }
 
 .homepage {
