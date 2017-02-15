@@ -1,77 +1,164 @@
 html {
     height: 100%;
-
-
+    resize: none;
 }
-body  {
-	background-image: url("/images/food5.jpeg");
 
-	background-repeat: no-repeat;
-	background-size: cover;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
-.homepage{
-     margin: 0 auto;
-	text-align: center;
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    resize: none;
+}
+
+#container {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    top: 0px;
+    height: 100px;
+    background: #840112;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    color: whitesmoke;
+    font-family: 'EB Garamond', serif;
+}
+
+#container header {
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#container ul {
+    line-height: 20px;
+    font-size: 15px;
+    float: right;
+    position: relative;
+}
+
+#container ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#container ul li a {
+    color: whitesmoke;
+    padding: 22px;
+    padding-top: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+#container ul ul {
+    position: absolute;
+    display: none;
+}
+
+#container ul li:hover ul {
+    display: block;
+}
+
+#container ul li li {
+    background: #60000c;
+    display: block;
+}
+
+#container ul li:hover {
+    background: #60000c;
+}
+
+#image {
+    height: 118%;
+    width: 100%;
+    position: fixed;
+    bottom: 165px;
+    background-image: url(/images/food6.jpg);
+    background-size: cover;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+    top: 490px;
+    height: 1500px;
+    background: floralwhite;
+}
+
+.homepage {
+    margin: 0 auto;
+    text-align: center;
     width: 60%;
 }
 
 .jumbotron {
-
     margin: 0 auto;
-	text-align: center;
+    text-align: center;
     border-radius: 25px;
-	width: 60%;
+    width: 60%;
 }
 
 
 /*Home page search bar*/
+
 .search-form .form-group {
-  float: right !important;
-  transition: all 0.35s, border-radius 0s;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  border-radius: 25px;
-  border: 1px solid #ccc;
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #ccc;
 }
+
 .search-form .form-group input.form-control {
-  padding-right: 20px;
-  border: 0 none;
-  background: transparent;
-  box-shadow: none;
-  display:block;
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display: block;
 }
+
 .search-form .form-group input.form-control::-webkit-input-placeholder {
-  display: none;
+    display: none;
 }
+
 .search-form .form-group input.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  display: none;
+    /* Firefox 18- */
+    display: none;
 }
+
 .search-form .form-group input.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  display: none;
+    /* Firefox 19+ */
+    display: none;
 }
+
 .search-form .form-group input.form-control:-ms-input-placeholder {
-  display: none;
+    display: none;
 }
+
 .search-form .form-group:hover,
 .search-form .form-group.hover {
-  width: 100%;
-  border-radius: 4px 25px 25px 4px;
+    width: 100%;
+    border-radius: 4px 25px 25px 4px;
 }
+
 .search-form .form-group span.form-control-feedback {
-  position: absolute;
-  top: -1px;
-  right: 14px;
-  z-index: 2;
-  display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  color: #3596e0;
-  left: initial;
-  font-size: 14px;
+    position: absolute;
+    top: -1px;
+    right: 14px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #3596e0;
+    left: initial;
+    font-size: 14px;
 }

@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-
 <!-- define angular app -->
+<html lang="en">
 
-<html ng-app="wfd">
 <head>
-    
-
-  <!-- SCROLLS -->
- <link rel="stylesheet" type="text/css" href="index.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-  
-
-  <!-- SPELLS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet" />
+    <title>What's for Dinner </title>
 </head>
 
-<!-- define angular controller -->
-<body ng-controller="mainController">
-
-<!--Navagation Bar -->
-  <nav class="navbar navbar-default">
-    <div class="container">
-
-        <a class="navbar-brand" href="/">What's for Dinner</a>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-shield"></i> Account</a></li>
-        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-        <li><a href="#login"><i class="fa fa-user"></i> Login</a></li>
-      </ul>
-        
+<body>
+    <div id="container">
+        <header>
+            <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+            <h1>What's For Dinner?</h1>
+            <ul>
+                <li>
+                    <A HREF="#">Browse</A>
+                    <ul>
+                        <li>
+                            <A HREF="#">Mexican</A> </li>
+                        <li>
+                            <A HREF="#">Italian</A> </li>
+                        <li>
+                            <A HREF="#">American</A> </li>
+                        <li>
+                            <A HREF="#">Chinese</A> </li>
+                    </ul>
+                </li>
+                <li>
+                    <A HREF="#">Login</A> </li>
+                <li>
+                    <A HREF="#">Contact</A> </li>
+                <li>
+                    <A HREF="#">Home</A> </li>
+            </ul>
+        </header>
     </div>
-  </nav>
-<!--End of Navagation Bar -->
-  
-    <div id="main">
-    <!-- angular templating -->
-    <!-- this is where content will be injected -->
-    <div ng-view> </div>
+    <div id="image"></div>
+    <div id="content">
+        <p>Text goes here</p>
     </div>
-  
-
 </body>
 
 </html>
