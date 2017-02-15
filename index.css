@@ -20,7 +20,7 @@ body {
     filter: alpha(opacity=90);
     top: 0px;
     height: 100px;
-    background: #840112;
+    background: #2e3601;
     width: 100%;
     z-index: 10;
     position: fixed;
@@ -29,7 +29,19 @@ body {
 }
 
 #container header {
+    background-image: url(/images/title1.png);
     font-weight: bolder;
+    background-size: 284px;
+    border-bottom-left-radius: 82px;
+    border-bottom-right-radius: 82px;
+    /* padding: 1px; */
+    margin: 500px;
+    margin-top: -19px;
+    margin-right: 24px;
+    background-color: seashell;
+    width: 23%;
+    display: -webkit-inline-box;
+    height: 200px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -73,11 +85,11 @@ body {
 }
 
 #image {
-    height: 118%;
+    height: 75%;
     width: 100%;
     position: fixed;
     bottom: 165px;
-    background-image: url(/images/food6.jpg);
+    background-image: url(/images/food7.jpg);
     background-size: cover;
 }
 
@@ -86,7 +98,7 @@ body {
     position: relative;
     top: 490px;
     height: 1500px;
-    background: floralwhite;
+    background: #e6d8ba;
 }
 
 .homepage {
