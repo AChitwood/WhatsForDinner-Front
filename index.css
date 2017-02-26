@@ -68,7 +68,7 @@ header h2 {
     height: 200px;
     display: -webkit-inline-box;
     cursor: pointer;
-    z-index: 8;
+    z-index: 23;
 }
 
 .navbar-header {
