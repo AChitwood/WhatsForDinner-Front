@@ -33,16 +33,18 @@ footer {
     background: #eee;
 }
 
+
+/*
 .row {
     margin-right: -15px;
     margin-left: -15px;
     margin-top: 51px;
 }
+*/
 
 header h1 {
     background-image: url(/images/title.png);
     background-size: 213px;
-    background-color: #e6d8ba;
     margin-left: 508px;
     margin-top: -63px;
     /* margin-right: -57px; */
@@ -59,7 +61,6 @@ header h2 {
     border-bottom-left-radius: 82px;
     border-bottom-right-radius: 82px;
     background-size: 217px;
-    background-color: #e6d8ba;
     margin-left: 507px;
     margin-top: -64px;
     margin-right: 24px;
@@ -76,14 +77,91 @@ header h2 {
 }
 
 .navbar.navbar-inverse {
-    opacity: 0.9;
-    background: #2e3601;
-    width: 100%;
+    background: #222328;
+    /*    opacity: .92;*/
     z-index: 20;
-    height: 74px;
+    /* height: 74px; */
     margin-top: -52px;
-    position: fixed;
-    color: whitesmoke;
+    color: black;
+    /* color: whitesmoke; */
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0px;
+    padding: 1px, 2px, 9px;
+    padding-left: 39px;
+    padding-right: 27px;
+    margin-left: 49px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+body {
+    padding: 50px;
+}
+
+#bodyCheck {
+    background: #eee;
+}
+
+#login-dp {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+#login-dp .help-block {
+    font-size: 12px
+}
+
+#login-dp .bottom {
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
+}
+
+#login-dp .social-buttons {
+    margin: 12px 0
+}
+
+#login-dp .social-buttons a {
+    width: 49%;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.btn-fb {
+    color: #blue;
+    background-color: #3b5998;
+}
+
+.btn-fb:hover {
+    color: #fff;
+    background-color: #496ebc
+}
+
+.btn-tw {
+    color: #fff;
+    background-color: #55acee;
+}
+
+.btn-tw:hover {
+    color: #fff;
+    background-color: #59b5fa;
+}
+
+@media(max-width:768px) {
+    #login-dp {
+        background-color: white;
+        color: black;
+    }
+    #login-dp .bottom {
+        background-color: white;
+        border-top: 0 none;
+    }
 }
 
 
