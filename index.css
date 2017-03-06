@@ -108,7 +108,7 @@ body {
     min-width: 250px;
     padding: 14px 14px 0;
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .8);
 }
 
 #login-dp .help-block {
@@ -116,6 +116,7 @@ body {
 }
 
 #login-dp .bottom {
+    background-color: rgba(255, 255, 255, .8);
     border-top: 1px solid #ddd;
     clear: both;
     padding: 14px;
@@ -134,7 +135,7 @@ body {
 }
 
 .btn-fb {
-    color: #blue;
+    color: #fff;
     background-color: #3b5998;
 }
 
@@ -155,11 +156,11 @@ body {
 
 @media(max-width:768px) {
     #login-dp {
-        background-color: white;
-        color: black;
+        background-color: inherit;
+        color: #fff;
     }
     #login-dp .bottom {
-        background-color: white;
+        background-color: inherit;
         border-top: 0 none;
     }
 }
