@@ -16,14 +16,14 @@ footer {
     background: #f3f3f3;
 }
 
-.sam{
+.sam {
     background-image: url(/images/sam.png);
 }
 
 .topTitle {
     background-image: url(/images/title.png);
     width: 124%;
-    background-color: #f3efe7;
+    background-color: #efe8d9;
     border-top-right-radius: 75px;
     height: 87px;
     margin-top: -24px;
@@ -35,7 +35,7 @@ footer {
 
 .bottomTitle {
     background-image: url(/images/title.png);
-    background-color: #f3efe7;
+    background-color: #efe8d9;
     width: 108%;
     height: 138px;
     border-top-right-radius: 75px;
@@ -81,7 +81,7 @@ body {
 }
 
 #bodyCheck {
-    background: #f3efe7;
+    background: #efe8d9;
     margin-top: 20px;
 }
 
@@ -286,7 +286,8 @@ body {
     padding: 10px 17px;
     font-size: 27px;
 }
+
 .col-md-7 h2 {
-   font-size: 26px;
+    font-size: 26px;
     width: 67%;
 }
