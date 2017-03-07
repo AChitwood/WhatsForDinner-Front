@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-
+<!-- define angular app -->
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>What's For Dinner?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script data-require="angular.js@1.1.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js" data-semver="1.1.5"></script>
+    <script data-require="ui-bootstrap@0.5.0" data-semver="0.5.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/spacelab/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="script.js">
+    </script>
+    <link rel="stylesheet " type="text/css " href="index.css ">
     <style>
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
@@ -16,10 +23,7 @@
         }
     </style>
 </head>
-<body>
-
-    <!-- Navbar Logo (because continuity) -->
-    <header id="masthead">
+<header id="masthead">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <nav class="navbar navbar-default navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -27,17 +31,18 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="navbar-brand" href="#">
-                    <div class="top"> </div>
+                    <div class="topTitle"> </div>
                 </a>
+                <div class="bottomTitle"> </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
+                            <li><a href="/userprofile.html">View the user profile</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li class="divider"></li>
@@ -48,7 +53,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#search">Search</a></li>
+                    <li><a href="#search"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
                 </ul>
                 <div id="search">
                     <button type="button" class="close">×</button>
@@ -61,7 +66,7 @@
                     <li>
                         <p class="navbar-text">Already have an account?</p>
                     </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><i class="fa fa-user" aria-hidden="true"></i> Login</b> <span class="caret"></span></a>
                         <ul id="login-dp" class="dropdown-menu">
                             <li>
                                 <div class="row">
@@ -85,11 +90,12 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="bottom text-center"> New here ? <a href="#"><b>Join Us</b></a> </div>
+                                    <div class="bottom text-center"> New here? <a href="#"><b>Join Us</b></a> </div>
                                 </div>
                             </li>
                         </ul>
                     </li>
+                    <li class="active"><a href="/pages/signup.html"><i class="fa fa-pencil" aria-hidden="true"></i> Signup</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -98,7 +104,8 @@
     </nav>
 </header>
 
-    <!-- Profile photo -->
+ <body>
+ <!-- Profile photo -->
     <div class="container">
         <div class="row">
             <div class="profile-header-container" style="text-align: center">
@@ -142,50 +149,46 @@
             </div>
         <p>Here is a curation of either your saved recipies or favorite recipies. This will be linked to your profile to display proper information</p>
     </div>
-
-
-    <!-- Footer (because continuity) -->
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-6 col-md-2 column">
-                    <h4>Information</h4>
-                    <ul class="nav">
-                        <li><a href="about-us.html">Products</a></li>
-                        <li><a href="about-us.html">Services</a></li>
-                        <li><a href="elements.html">Developers</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-md-2 column">
-                    <h4>Follow Us</h4>
-                    <ul class="nav">
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Google+</a></li>
-                        <li><a href="#">Pinterest</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-md-2 column">
-                    <h4>Contact Us</h4>
-                    <ul class="nav">
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-md-3 column">
-                    <h4>Customer Service</h4>
-                    <ul class="nav">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/row-->
-            <p class="text-right">©2017</p>
-        </div>
-    </footer>
 </body>
+
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-md-2 column">
+                <h4>Information</h4>
+                <ul class="nav">
+                    <li><a href="about-us.html">Services</a></li>
+                    <li><a href="elements.html">Developers</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-2 column">
+                <h4>Follow Us</h4>
+                <ul class="nav">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Google+</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-2 column">
+                <h4>Contact Us</h4>
+                <ul class="nav">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-md-3 column">
+                <h4>Customer Service</h4>
+                <ul class="nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/row-->
+        <p class="text-right">©2017</p>
+    </div>
+</footer>
 
 </html>
