@@ -16,6 +16,10 @@ footer {
     background: #f3f3f3;
 }
 
+.sam{
+    background-image: url(/images/sam.png);
+}
+
 .topTitle {
     background-image: url(/images/title.png);
     width: 124%;
