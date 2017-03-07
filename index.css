@@ -19,7 +19,7 @@ footer {
 .topTitle {
     background-image: url(/images/title.png);
     width: 124%;
-    background-color: #f9f9f9;
+    background-color: #f3efe7;
     border-top-right-radius: 75px;
     height: 87px;
     margin-top: -24px;
@@ -31,6 +31,7 @@ footer {
 
 .bottomTitle {
     background-image: url(/images/title.png);
+    background-color: #f3efe7;
     width: 108%;
     height: 138px;
     border-top-right-radius: 75px;
@@ -76,15 +77,16 @@ body {
 }
 
 #bodyCheck {
-    background: #f9f9f9;
+    background: #f3efe7;
     margin-top: 20px;
 }
 
 #login-dp {
     min-width: 250px;
+    opacity: 1;
     padding: 14px 14px 0;
     overflow: hidden;
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 #login-dp .help-block {
@@ -92,7 +94,8 @@ body {
 }
 
 #login-dp .bottom {
-    background-color: #f9f9f9;
+    background-color: white;
+    opacity: 1;
     border-top: 1px solid #ddd;
     clear: both;
     padding: 14px;
