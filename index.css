@@ -286,3 +286,7 @@ body {
     padding: 10px 17px;
     font-size: 27px;
 }
+.col-md-7 h2 {
+   font-size: 26px;
+    width: 67%;
+}
