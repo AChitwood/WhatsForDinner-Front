@@ -13,13 +13,13 @@
 }
 
 footer {
-    background: #eee;
+    background: #f3f3f3;
 }
 
-.top {
+.topTitle {
     background-image: url(/images/title.png);
     width: 124%;
-    background-color: #fbf7f4;
+    background-color: #f9f9f9;
     border-top-right-radius: 75px;
     height: 87px;
     margin-top: -24px;
@@ -29,16 +29,13 @@ footer {
     z-index: 999999;
 }
 
-.bottom {
+.bottomTitle {
     background-image: url(/images/title.png);
     width: 108%;
-    height: 145px;
+    height: 138px;
     border-top-right-radius: 75px;
     margin-top: -10px;
-    background-color: #fbf7f4;
     margin-right: 200px;
-    border-bottom-left-radius: 43px;
-    border-bottom-right-radius: 57px;
     margin-left: -16px;
     background-size: 215px;
     z-index: 999999;
@@ -79,15 +76,15 @@ body {
 }
 
 #bodyCheck {
-    background: #fbf7f4;
-    margin-top: 21px;
+    background: #f9f9f9;
+    margin-top: 20px;
 }
 
 #login-dp {
     min-width: 250px;
     padding: 14px 14px 0;
     overflow: hidden;
-    background-color: rgb(255, 250, 245);
+    background-color: #f9f9f9;
 }
 
 #login-dp .help-block {
@@ -95,7 +92,7 @@ body {
 }
 
 #login-dp .bottom {
-    background-color: rgb(255, 250, 245);
+    background-color: #f9f9f9;
     border-top: 1px solid #ddd;
     clear: both;
     padding: 14px;

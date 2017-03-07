@@ -27,5 +27,5 @@ $(function () {
     })
 });
 $(window).scroll(function () {
-    $(".bottom").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".bottomTitle").css("opacity", 1 - $(window).scrollTop() / 30);
 });
