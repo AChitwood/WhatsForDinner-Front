@@ -13,17 +13,35 @@
 }
 
 footer {
-    background: #eee;
+    background: #f3f3f3;
 }
 
-.top {
+.sam {
+    background-image: url(/images/sam.png);
+}
+
+.topTitle {
     background-image: url(/images/title.png);
-    width: 140%;
-    height: 145px;
-    margin-top: -26px;
+    width: 124%;
+    background-color: #efe8d9;
+    border-top-right-radius: 75px;
+    height: 87px;
+    margin-top: -24px;
     margin-right: 178px;
-    margin-left: -35px;
-    opacity: 1;
+    margin-left: -16px;
+    background-size: 215px;
+    z-index: 999999;
+}
+
+.bottomTitle {
+    background-image: url(/images/title.png);
+    background-color: #efe8d9;
+    width: 108%;
+    height: 138px;
+    border-top-right-radius: 75px;
+    margin-top: -10px;
+    margin-right: 200px;
+    margin-left: -16px;
     background-size: 215px;
     z-index: 999999;
 }
@@ -32,15 +50,20 @@ footer {
     padding-top: 60px;
 }
 
+.navbar-inverse .navbar-collapse {
+    padding-top: 16px;
+    border-color: #395c82;
+}
+
 .navbar.navbar-inverse {
     position: fixed;
-    background: #222328;
+    background: #5d1416;
     /* opacity: .92; */
     z-index: 20;
     height: 79px;
     margin-top: -59px;
     color: black;
-    width: 92%
+    width: 92%;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -58,15 +81,16 @@ body {
 }
 
 #bodyCheck {
-    background: #eee;
-    margin-top: 22px;
+    background: #efe8d9;
+    margin-top: 20px;
 }
 
 #login-dp {
     min-width: 250px;
+    opacity: 1;
     padding: 14px 14px 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: white;
 }
 
 #login-dp .help-block {
@@ -74,7 +98,8 @@ body {
 }
 
 #login-dp .bottom {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: white;
+    opacity: 1;
     border-top: 1px solid #ddd;
     clear: both;
     padding: 14px;
@@ -260,4 +285,9 @@ body {
     opacity: 1;
     padding: 10px 17px;
     font-size: 27px;
+}
+
+.col-md-7 h2 {
+    font-size: 26px;
+    width: 67%;
 }

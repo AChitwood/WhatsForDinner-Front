@@ -31,15 +31,16 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a class="navbar-brand" href="#">
-                    <div class="top"> </div>
+                    <div class="topTitle"> </div>
                 </a>
+                <div class="bottomTitle"> </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -52,7 +53,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#search">Search</a></li>
+                    <li><a href="#search"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
                 </ul>
                 <div id="search">
                     <button type="button" class="close">×</button>
@@ -65,7 +66,7 @@
                     <li>
                         <p class="navbar-text">Already have an account?</p>
                     </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><i class="fa fa-user" aria-hidden="true"></i> Login</b> <span class="caret"></span></a>
                         <ul id="login-dp" class="dropdown-menu">
                             <li>
                                 <div class="row">
@@ -89,11 +90,12 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="bottom text-center"> New here ? <a href="#"><b>Join Us</b></a> </div>
+                                    <div class="bottom text-center"> New here? <a href="#"><b>Join Us</b></a> </div>
                                 </div>
                             </li>
                         </ul>
                     </li>
+                    <li class="active"><a href="/pages/signup.html"><i class="fa fa-pencil" aria-hidden="true"></i> Signup</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -116,32 +118,32 @@
             <div class="col-md-5">
                 <div class="row">
                     <!-- article1 -->
-                    <div class="col-sm-12"> <span class="label label-default">Category 1</span>
-                        <p>Blah</p>
-                        <h3>Heading Bloh</h3>
-                        <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                    <div class="col-sm-12"> <span class="label label-default"></span>
+
+                        <h3>Browse Recipes</h3>
+                        <p>What's for Dinner is here to make browsing for a meal quick and easy. Search through endless recipes in our kitchen without needing an account.</p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="small"><i class="fa fa-clock-o"></i> 2 days ago</p>
                             </div>
-                            <div class="col-sm-6 text-right"><i class="fa fa-tags"></i> Tags: <span class="label label-default">tag</span> <span class="label label-default">code</span> <span class="label label-default">snippet</span></div>
+                            <div class="col-sm-6 text-right"><i class="fa fa-tags"></i> Tags: <span class="label label-default">yummy</span> <span class="label label-default">love</span> <span class="label label-default">smart</span></div>
                         </div>
                     </div>
                     <!-- article2 -->
                     <div class="col-sm-12">
-                        <hr> <span class="label label-default">Category 1</span>
+                        <hr> <span class="label label-default"></span>
                         <h3>Track your ingredients</h3>
-                        <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                        <p>Want to get the most out of our website? Create an account and now you will be able to track your ingredients in your pantry. You'll  be able to find recipes quicker based on your ingredients with a click of a button. </p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="small"><i class="fa fa-clock-o"></i> 3 days ago</p>
                             </div>
-                            <div class="col-sm-6 text-right"><i class="fa fa-tags"></i> Tags: <span class="label label-default">another</span> <span class="label label-default">tag</span></div>
+                            <div class="col-sm-6 text-right"><i class="fa fa-tags"></i> Tags: <span class="label label-default">techsavy</span> <span class="label label-default">trackermaster</span></div>
                         </div>
                     </div>
                     <!-- article3 -->
                     <div class="col-sm-12">
-                        <hr> <span class="label label-default">Category 1</span>
+                        <hr> <span class="label label-default"></span>
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -152,21 +154,21 @@
                             </ol>
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
-                                <div class="item active"> <img src="/images/food7.jpg" alt="Spices" width="460" height="345"> </div>
-                                <div class="item"> <img src="/images/food5.jpeg" alt="Chicken" width="460" height="345"> </div>
-                                <div class="item"> <img src="/images/food6.jpg" alt="Fruits" width="460" height="345"> </div>
+                                <div class="item active"> <img src="/images/sweet1.jpg" alt="Spices" width="460" height="345"> </div>
+                                <div class="item"> <img src="/images/waffles.jpg" alt="Chicken" width="460" height="345"> </div>
+                                <div class="item"> <img src="/images/burger.jpeg" alt="Fruits" width="460" height="345"> </div>
                                 <div class="item"> <img src="/images/food4.jpg" alt="Dessert" width="460" height="345"> </div>
                             </div>
                             <!-- Left and right controls -->
                             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
                             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
                         </div>
-                        <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                        <p>Now Trending..</p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="small"><i class="fa fa-clock-o"></i> 3 days ago</p>
                             </div>
-                            <div class="col-sm-6 text-right"><i class="fa fa-tags"></i> Tags: <span class="label label-default">another</span> <span class="label label-default">tag</span></div>
+                            <div class="col-sm-6 text-right"><i class="fa fa-tags"></i> Tags: <span class="label label-default">trend</span> <span class="label label-default">popular</span></div>
                         </div>
                     </div>
                 </div>
@@ -174,62 +176,60 @@
             <!--right col-->
             <div class="col-md-7">
                 <div class="row">
-                    <div class="col-md-7"> <span class="label label-default">Interviews</span> <img src="http://placehold.it/600X200" class="img-responsive">
                         <h2>What's For Dinner will help you keep track</h2>
-                        <p>Text text text text text text text text text text text text text text text text text text text text text text text </p>
+                        <p>We are here to make cooking more fun and delicious.</p>
+                     <div class="col-md-7"> <span class="label label-default"></span> <img src="/images/cooking.jpg" class="img-responsive">
                         <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-clock"></i> Blah</a></li>
                             <li><a href="#"><i class="fa fa-meh-o"></i> Max is awesome</a></li>
                         </ul>
                         <hr>
                         <!-- bootstrap media-->
                         <div class="media">
+                            <h3>User Reviews</h3>
                             <div class="media-left">
-                                <a href="#"> <img class="media-object img-circle" src="//placehold.it/60" alt=""> </a>
+                                <a href="#"> <img class="media-object img-circle" src="/images/sam.png" alt="" width =70px> </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Media heading</h4>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <h4 class="media-heading">CookieMonsta</h4>
+                                <p>"This is the best recipe website of the century."</p>
                             </div>
                         </div>
                         <div class="media">
                             <div class="media-left">
-                                <a href="#"> <img class="media-object img-circle" src="//placehold.it/60" alt=""> </a>
+                                <a href="#"> <img class="media-object img-circle" src="/images/garrett.png" alt=""width =70px> </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Media heading 2</h4>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <h4 class="media-heading">chefgarrett</h4>
+                                <p>"I love that I'm able to add my personal recipes! I'm always cooking and using What's for Dinner?"</p>
                             </div>
                         </div>
                         <div class="media">
                             <div class="media-left">
-                                <a href="#"> <img class="media-object img-circle" src="//placehold.it/60" alt=""> </a>
+                                <a href="#"> <img class="media-object img-circle" src="/images/joseph.png" alt="" width =70px> </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Media heading 3</h4>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <h4 class="media-heading">jgauth</h4>
+                                <p>"Searching for food has never been easier now."</p>
                             </div>
                         </div>
                         <div class="media">
                             <div class="media-left">
-                                <a href="#"> <img class="media-object img-circle" src="//placehold.it/60" alt=""> </a>
+                                <a href="#"> <img class="media-object img-circle" src="/images/wassim.png" alt="" width =70px> </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Media heading 4</h4>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <h4 class="media-heading">foodjunkie</h4>
+                                <p>"I RATE THIS 5 CUPCAKES!"</p>
                             </div>
                         </div>
                         <!-- /bootstrap media-->
                         <hr>
                         <h3>More Features</h3>
-                        <p class="small">Some subtitle</p>
-                        <p> Text text text text text text text text text text text text text text text text text text text text text text text </p>
+                        <p class="small">Save Personal Recipes</p>
+                        <p> Have a family recipe? No problem! You can now add your family recipes onto your personal account.</p>
                         <br>
-                        <p class="small">Some subtitle</p>
-                        <p> Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+                        <p class="small">Search Bar Upgrade</p>
+                        <p> With our search bar, you can serach by an ingredient or recipe.</p>
                         <br>
-                        <p class="small">Secondary heading</p>
-                        <p> Text text text text text text text text text text text text text text text text text text text text text text </p>
                     </div>
                     <!--rightmost col-->
                     <div class="col-md-5">
@@ -245,21 +245,21 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading">Panel</div>
+                                    <div class="panel-heading">Your Ingredients Here</div>
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-xs-6"><img src="//placehold.it/200x200" class="img-responsive"></div>
-                                            <div class="col-xs-6"><img src="//placehold.it/200x200" class="img-responsive"></div>
+                                            <div class="col-xs-6"><img src="/images/ing1.jpeg" class="img-responsive"></div>
+                                            <div class="col-xs-6"><img src="/images/ing2.jpg" class="img-responsive"></div>
                                         </div>
                                         <br>
                                         <div class="row">
-                                            <div class="col-xs-6"><img src="//placehold.it/200x200" class="img-responsive"></div>
-                                            <div class="col-xs-6"><img src="//placehold.it/200x200" class="img-responsive"></div>
+                                            <div class="col-xs-6"><img src="/images/ing3.jpg" class="img-responsive"></div>
+                                            <div class="col-xs-6"><img src="/images/ing4.jpg" class="img-responsive"></div>
                                         </div>
                                         <br>
                                         <div class="row">
-                                            <div class="col-xs-6"><img src="//placehold.it/200x200" class="img-responsive"></div>
-                                            <div class="col-xs-6"><img src="//placehold.it/200x200" class="img-responsive"></div>
+                                            <div class="col-xs-6"><img src="/images/ing5.jpeg" class="img-responsive"></div>
+                                            <div class="col-xs-6"><img src="/images/ing6.jpeg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +295,6 @@
             <div class="col-xs-6 col-md-2 column">
                 <h4>Information</h4>
                 <ul class="nav">
-                    <li><a href="about-us.html">Products</a></li>
                     <li><a href="about-us.html">Services</a></li>
                     <li><a href="elements.html">Developers</a></li>
                 </ul>
@@ -320,7 +319,6 @@
                 <h4>Customer Service</h4>
                 <ul class="nav">
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Delivery Information</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms &amp; Conditions</a></li>
                 </ul>
