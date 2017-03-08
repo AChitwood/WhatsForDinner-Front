@@ -1,14 +1,14 @@
-var app = angular.module('homepage', ['ui.bootstrap']);
-app.controller('MainCtrl', function ($scope) {
-    $scope.name = 'World';
-});
-app.controller('DropdownCtrl', function ($scope) {
-    $scope.items = [
-        "The first choice!"
-        , "And another choice for you."
-        , "but wait! A third!"
-    ];
-});
+//var app = angular.module('homepage', ['ui.bootstrap']);
+//app.controller('MainCtrl', function ($scope) {
+//    $scope.name = 'World';
+//});
+//app.controller('DropdownCtrl', function ($scope) {
+//    $scope.items = [
+//        "The first choice!"
+//        , "And another choice for you."
+//        , "but wait! A third!"
+//    ];
+//});
 $(function () {
     $('a[href="#search"]').on('click', function (event) {
         event.preventDefault();
