@@ -13,7 +13,7 @@
 }
 
 footer {
-    background: #e6e0e0;
+    background: #f1f0f0;
 }
 
 .sam {
@@ -55,9 +55,16 @@ footer {
     border-color: #395c82;
 }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
 .navbar.navbar-inverse {
     position: fixed;
-    background: #5d1416;
+    background: #8c2022;
     /* opacity: .92; */
     z-index: 20;
     height: 79px;

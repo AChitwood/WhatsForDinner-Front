@@ -12,12 +12,15 @@ MyApp.config(function ($routeProvider) {
         })
         // route for the about page
         .when('/login', {
-            templateUrl: 'login/login.view.html'
+            templateUrl: 'login/login.view.html '
             , controller: 'aboutController'
         })
         // route for the contact page
-        .when('/contact', {
-            templateUrl: 'pages/contact.html'
-            , controller: 'contactController'
+        .when('/register', {
+            templateUrl: 'register/register.view.html'
+            , controller: 'register.controller.js'
         });
+});
+MyApp.controller('home.controller', function ($scope) {
+    $scope.message = 'It is working ';
 });
