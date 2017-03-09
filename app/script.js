@@ -11,8 +11,8 @@ MyApp.config(function ($routeProvider) {
             , controller: 'home.controller'
         })
         // route for the about page
-        .when('/about', {
-            templateUrl: 'pages/about.html'
+        .when('/login', {
+            templateUrl: 'login/login.view.html'
             , controller: 'aboutController'
         })
         // route for the contact page

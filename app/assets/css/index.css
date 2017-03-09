@@ -23,7 +23,7 @@ footer {
 .topTitle {
     background-image: url(/app/assets/images/title.png);
     width: 124%;
-    background-color: #efe8d9;
+    background-color: #fbf8f1;
     border-top-right-radius: 75px;
     height: 87px;
     margin-top: -24px;
@@ -35,7 +35,7 @@ footer {
 
 .bottomTitle {
     background-image: url(/app/assets/images/title.png);
-    background-color: #efe8d9;
+    background-color: #fbf8f1;
     width: 108%;
     height: 138px;
     border-top-right-radius: 75px;
@@ -81,7 +81,7 @@ body {
 }
 
 #bodyCheck {
-    background: #efe8d9;
+    background: #fbf8f1;
     margin-top: 20px;
 }
 
