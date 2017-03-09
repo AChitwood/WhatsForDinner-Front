@@ -10,10 +10,18 @@ MyApp.config(function ($routeProvider) {
             templateUrl: 'home/home.html'
             , controller: 'home.controller.test'
         })
+    //routes when not on homepage
+        .when('/home', {
+            templateUrl: 'home/home.html'
+            , controller: 'home.controller.test'
+        })
         // route for the about page
         .when('/login', {
             templateUrl: 'login/login.view.html '
             , controller: 'aboutController'
+        })
+    .when('/userprofile', {
+            templateUrl: 'userprofile/userprofile.html '
         })
         // route for the contact page
         .when('/register', {

@@ -16,10 +16,14 @@ footer {
     background: #f1f0f0;
 }
 
-.sam {
-    background-image: url(/app/assets/images/sam.png);
+.regs{
+    padding: 60px;
+    background-color: #fbf8f1;
 }
-
+.logincss{
+    padding: 60px;
+    background-color: #fbf8f1;
+}
 .topTitle {
     background-image: url(/app/assets/images/title.png);
     width: 124%;
