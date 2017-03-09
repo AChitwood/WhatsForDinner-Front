@@ -1,5 +1,5 @@
 <div class="regs">
-    <h2>Register</h2>
+    <h2>Signup</h2>
     <form name="form" ng-submit="vm.register()" role="form">
         <div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
             <label for="username">First name</label>
@@ -14,6 +14,6 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="password" class="form-control" ng-model="vm.user.password" required /> <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span> </div>
         <div class="form-actions">
-            <button type="submit" class="btn btn-primary"><a href="#login">Register</a></button> <a href="#" class="btn btn-link">Cancel</a> </div>
+            <button type="submit" class="btn btn-primary"><a href="#login">Signup</a></button> <a href="#" class="btn btn-link">Cancel</a> </div>
     </form>
 </div>

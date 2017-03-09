@@ -20,9 +20,9 @@ MyApp.config(function ($routeProvider) {
             templateUrl: 'userprofile/userprofile.html '
         })
         // route for the contact page
-        .when('/register', {
-            templateUrl: 'register/register.view.html'
-            , controller: 'register.controller.js'
+        .when('/signup', {
+            templateUrl: 'signup/signup.html'
+            , controller: 'signup.controller.js'
         });
 });
 MyApp.controller('home.controller', function ($scope) {
