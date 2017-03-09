@@ -16,14 +16,16 @@ footer {
     background: #f1f0f0;
 }
 
-.regs{
+.regs {
     padding: 60px;
     background-color: #fbf8f1;
 }
-.logincss{
+
+.logincss {
     padding: 60px;
     background-color: #fbf8f1;
 }
+
 .topTitle {
     background-image: url(/app/assets/images/title.png);
     width: 124%;
@@ -67,14 +69,11 @@ footer {
 }
 
 .navbar.navbar-inverse {
-    position: fixed;
     background: #8c2022;
     /* opacity: .92; */
     z-index: 20;
     height: 79px;
-    margin-top: -59px;
     color: black;
-    width: 92%;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -89,6 +88,7 @@ footer {
 
 body {
     padding: 50px;
+    background-color: #fbf8f1;
 }
 
 #bodyCheck {
