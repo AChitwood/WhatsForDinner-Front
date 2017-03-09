@@ -39,6 +39,8 @@ footer {
     z-index: 999999;
 }
 
+
+/*
 .bottomTitle {
     background-image: url(/app/assets/images/title.png);
     background-color: #fbf8f1;
@@ -51,6 +53,7 @@ footer {
     background-size: 215px;
     z-index: 999999;
 }
+*/
 
 .col-sm-12 {
     padding-top: 60px;
@@ -74,6 +77,7 @@ footer {
     z-index: 20;
     height: 79px;
     color: black;
+    margin-bottom: 0px;
 }
 
 .navbar-nav>li>.dropdown-menu {
