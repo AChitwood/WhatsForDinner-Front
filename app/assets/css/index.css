@@ -28,30 +28,28 @@ footer {
 
 .topTitle {
     background-image: url(/app/assets/images/title.png);
-    width: 42%;
+    width: 99%;
     background-color: #fbf8f1;
     border-top-right-radius: 75px;
-    border-top-left-radius: 75px;
     height: 87px;
-    margin-top: -40px;
-    margin-right: 190px;
-    margin-left: 262px;
+    margin-top: -24px;
+    margin-right: 178px;
+    margin-left: -16px;
     background-size: 215px;
     z-index: 999999;
 }
 
 .bottomTitle {
     background-image: url(/app/assets/images/title.png);
-    width: 42%;
     background-color: #fbf8f1;
+    width: 99%;
+    height: 140px;
     border-top-right-radius: 75px;
-    border-top-left-radius: 75px;
-    height: 138px;
     margin-top: -97px;
-    margin-right: 190px;
-    margin-left: 262px;
+    margin-right: 200px;
+    margin-left: -16px;
     background-size: 215px;
-    z-index: 999999;
+    z-index: 9999999;
 }
 
 .col-sm-12 {
@@ -314,4 +312,11 @@ body {
     font-size: 26px;
     width: 67%;
     padding-top: 58px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(122, 23, 23, 0.19);
 }
