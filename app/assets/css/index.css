@@ -56,15 +56,6 @@ footer {
     padding-top: 60px;
 }
 
-.col-md-12 {
-    width: 100%;
-    padding-top: -15px;
-    padding-bottom: -11px;
-    margin-top: -102px;
-    margin-left: 47px;
-    margin-bottom: 120px;
-}
-
 .navbar-inverse .navbar-collapse {
     padding-top: 16px;
     border-color: #395c82;
@@ -317,6 +308,7 @@ body {
     width: 67%;
     padding-top: 58px;
 }
+
 
 hr {
     margin-top: 20px;
