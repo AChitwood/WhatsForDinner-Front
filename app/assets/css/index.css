@@ -17,12 +17,12 @@ footer {
 }
 
 .regs {
-    padding: 60px;
+    padding: 90px;
     background-color: #fbf8f1;
 }
 
 .logincss {
-    padding: 60px;
+    padding: 90px;
     background-color: #fbf8f1;
 }
 
@@ -108,11 +108,9 @@ body {
 
 #login-dp .help-block {
     font-size: 12px;
-
 }
 
 #login-dp .bottom {
-
     background-color: white;
     opacity: 1;
     border-top: 1px solid #ddd;
@@ -130,7 +128,6 @@ body {
 
 #login-dp .form-group {
     margin-bottom: 10px;
-
 }
 
 .btn-fb {
