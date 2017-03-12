@@ -12,16 +12,16 @@ MyApp.config(function ($routeProvider) {
         // route for the about page
         .when('/login', {
             templateUrl: 'login/login.view.html '
-<<<<<<< HEAD
             , controller: 'login.controller'
-        }).when('/userprofile', {
+        })
+        .when('/userprofile', {
             templateUrl: 'userprofile/userprofile.html '
-=======
             , controller: 'aboutController'
         })
+
     .when('/userprofile', {
             templateUrl: 'betaprofile/betaprofile.html '
->>>>>>> origin/master
+
         })
         // route for the contact page
         .when('/signup', {
