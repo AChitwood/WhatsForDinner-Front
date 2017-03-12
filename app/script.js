@@ -8,15 +8,12 @@ MyApp.config(function ($routeProvider) {
     // route for the home page
         .when('/', {
             templateUrl: 'home/home.html'
-            , controller: 'home.controller.test'
         })
-
         // route for the about page
         .when('/login', {
             templateUrl: 'login/login.view.html '
-            , controller: 'aboutController'
-        })
-    .when('/userprofile', {
+            , controller: 'login.controller'
+        }).when('/userprofile', {
             templateUrl: 'userprofile/userprofile.html '
         })
         // route for the contact page

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- define angular app -->
-<html ng-app="MyApp">
+<html>
 
 <head>
     <title>What's For Dinner?</title>
@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <!-- Project Libraries -->
-    <link rel="stylesheet " type="text/css " href="/app/assets/css/index.css" />
+    <link rel="stylesheet " type="text/css "href="/app/assets/css/index.css" />
     <script src="script.js"></script>
     <script src="/app/assets/jquery.js"></script>
 </head>
@@ -103,7 +103,7 @@
 <!-- End of Header -->
 <!--Angular Injection -->
 
-<body>
+<body ng-app="MyApp">
     <div ng-view></div>
     <script src="/app/script.js"></script>
 </body>
