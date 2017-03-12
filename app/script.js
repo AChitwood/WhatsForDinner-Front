@@ -14,12 +14,12 @@ MyApp.config(function ($routeProvider) {
             templateUrl: 'login/login.view.html '
             , controller: 'login.controller'
         })
-        .when('/userprofile', {
+      /*  .when('/userprofile', {
             templateUrl: 'userprofile/userprofile.html '
             , controller: 'aboutController'
-        })
+        })*/
 
-    .when('/userprofile', {
+    .when('/betaprofile', {
             templateUrl: 'betaprofile/betaprofile.html '
 
         })
