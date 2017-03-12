@@ -17,7 +17,7 @@ MyApp.config(function ($routeProvider) {
             , controller: 'aboutController'
         })
     .when('/userprofile', {
-            templateUrl: 'userprofile/userprofile.html '
+            templateUrl: 'betaprofile/betaprofile.html '
         })
         // route for the contact page
         .when('/signup', {
