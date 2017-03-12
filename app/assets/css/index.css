@@ -25,6 +25,9 @@ footer {
     padding: 90px;
     background-color: #fbf8f1;
 }
+.recipecss{
+    padding: 90px;
+}
 
 .topTitle {
     background-image: url(/app/assets/images/title.png);
