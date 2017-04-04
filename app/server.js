@@ -4,12 +4,10 @@ var express = require('express');
 var app = express(); // create our app w/ express
 var bodyParser = require('body-parser'); // pull information from HTML POST (express4)
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
-app.use('/img', express.static((__dirname, 'public/images')));
-app.use('/js', express.static((__dirname, 'public/javascripts')));
-app.use('/css', express.static((__dirname, 'public/stylesheets')));
+app.use(express.static(__dirname + '/assets/css'));
+app.use(express.static(__dirname + '/'));
 app.get('/', function (req, res) {
         res.sendFile(__dirname + "/index.html");
-        res.sendFile(__dirname + "/server.js")
     })
     // configuration =================
     //app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
