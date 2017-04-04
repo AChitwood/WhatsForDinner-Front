@@ -6,7 +6,7 @@ var bodyParser = require('body-parser'); // pull information from HTML POST (exp
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 app.get('/', function (req, res) {
         res.sendFile(__dirname + "/index.html");
-        //res.sendFile(__dirname + "/home/home.html")
+        res.sendFile(__dirname + "/home/home.html")
     })
     // configuration =================
     //app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
