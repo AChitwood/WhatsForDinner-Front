@@ -5,7 +5,7 @@ var app = express(); // create our app w/ express
 var bodyParser = require('body-parser'); // pull information from HTML POST (express4)
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 app.get('/', function (req, res) {
-        res.sendFile(__dirname + "/app/index.html");
+        res.sendFile(__dirname + "/index.html");
         //res.sendFile(__dirname + "/home/home.html")
     })
     // configuration =================
