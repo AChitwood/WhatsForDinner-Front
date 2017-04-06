@@ -25,12 +25,13 @@ footer {
     padding: 90px;
     background-color: #fbf8f1;
 }
-.recipecss{
+
+.recipecss {
     padding: 90px;
 }
 
 .topTitle {
-    background-image: url(/app/assets/images/title.png);
+    background-image: url(/assets/images/title.png);
     width: 99%;
     background-color: #fbf8f1;
     border-top-right-radius: 75px;
@@ -43,7 +44,7 @@ footer {
 }
 
 .bottomTitle {
-    background-image: url(/app/assets/images/title.png);
+    background-image: url(/assets/images/title.png);
     background-color: #fbf8f1;
     width: 99%;
     height: 140px;
@@ -225,7 +226,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 165px;
-    background-image: url(/app/assets/images/food7.jpg);
+    background-image: url(/assets/images/food7.jpg);
     background-size: cover;
 }
 
