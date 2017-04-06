@@ -6,6 +6,7 @@ var bodyParser = require('body-parser'); // pull information from HTML POST (exp
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 app.use(express.static(__dirname + '/'));
 app.use(express.static('assets/css'));
+app.use("/assets", express.static("assets"));
 app.get('/', function (req, res) {
         res.sendFile(__dirname + "/index.html");
     })
