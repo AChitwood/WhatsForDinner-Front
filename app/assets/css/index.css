@@ -31,7 +31,7 @@ footer {
 }
 
 .topTitle {
-    background-image: url(/assets/images/title.png);
+    background-image: url(/app/assets/images/title.png);
     width: 99%;
     background-color: #fbf8f1;
     border-top-right-radius: 75px;
@@ -44,7 +44,7 @@ footer {
 }
 
 .bottomTitle {
-    background-image: url(/assets/images/title.png);
+    background-image: url(/app/assets/images/title.png);
     background-color: #fbf8f1;
     width: 99%;
     height: 140px;
@@ -85,17 +85,6 @@ footer {
     height: 79px;
     color: black;
     margin-bottom: 0px;
-}
-
-.navbar-nav>li>.dropdown-menu {
-    margin-top: 12px;
-    margin-right: -76px;
-    padding: 1px, 2px, 9px;
-    padding-left: 39px;
-    padding-right: 27px;
-    margin-left: 10px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
 }
 
 body {
@@ -226,7 +215,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 165px;
-    background-image: url(/assets/images/food7.jpg);
+    background-image: url(/app/assets/images/food7.jpg);
     background-size: cover;
 }
 
@@ -321,4 +310,76 @@ hr {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid rgba(122, 23, 23, 0.19);
+}
+
+.dropdown-large {
+    position: static !important;
+}
+
+.dropdown-menu-large {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 20px 0px;
+}
+
+.dropdown-menu-large > li > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu-large > li > ul > li {
+    list-style: none;
+}
+
+.dropdown-menu-large > li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: normal;
+}
+
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+    color: #999999;
+}
+
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    cursor: not-allowed;
+}
+
+.dropdown-menu-large .dropdown-header {
+    color: #428bca;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu-large {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dropdown-menu-large > li {
+        margin-bottom: 30px;
+    }
+    .dropdown-menu-large > li:last-child {
+        margin-bottom: 0;
+    }
+    .dropdown-menu-large .dropdown-header {
+        padding: 3px 15px !important;
+    }
 }

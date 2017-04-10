@@ -16,9 +16,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <!-- Project Libraries -->
-    <link rel="stylesheet " type="text/css " href="/assets/css/index.css" />
+    <link rel="stylesheet " type="text/css " href="/app/assets/css/index.css" />
     <script src="script.js"></script>
-    <script src="/assets/jquery.js"></script>
+    <script src="/app/assets/jquery.js"></script>
 </head>
 <!-- Header -->
 <header id="masthead">
@@ -32,24 +32,68 @@
                         <ul class="bottomTitle"> </ul>
                     </a>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a href="#">Some action</a></li>
-                        <li><a href="#">Some other action</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-submenu"> <a tabindex="-1" href="#">Hover me for more options</a>
-                            <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="#">Second level</a></li>
-                                <li class="dropdown-submenu"> <a href="#">Even More..</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">3rd level</a></li>
-                                        <li><a href="#">3rd level</a></li>
+                <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown dropdown-large"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu dropdown-menu-large row">
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Glyphicons</li>
+                                        <li><a href="#">Available glyphs</a></li>
+                                        <li class="disabled"><a href="#">How to use</a></li>
+                                        <li><a href="#">Examples</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Dropdowns</li>
+                                        <li><a href="#">Example</a></li>
+                                        <li><a href="#">Aligninment options</a></li>
+                                        <li><a href="#">Headers</a></li>
+                                        <li><a href="#">Disabled menu items</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Second level</a></li>
-                                <li><a href="#">Second level</a></li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Button groups</li>
+                                        <li><a href="#">Basic example</a></li>
+                                        <li><a href="#">Button toolbar</a></li>
+                                        <li><a href="#">Sizing</a></li>
+                                        <li><a href="#">Nesting</a></li>
+                                        <li><a href="#">Vertical variation</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Button dropdowns</li>
+                                        <li><a href="#">Single button dropdowns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Input groups</li>
+                                        <li><a href="#">Basic example</a></li>
+                                        <li><a href="#">Sizing</a></li>
+                                        <li><a href="#">Checkboxes and radio addons</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Navs</li>
+                                        <li><a href="#">Tabs</a></li>
+                                        <li><a href="#">Pills</a></li>
+                                        <li><a href="#">Justified</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Navbar</li>
+                                        <li><a href="#">Default navbar</a></li>
+                                        <li><a href="#">Buttons</a></li>
+                                        <li><a href="#">Text</a></li>
+                                        <li><a href="#">Non-nav links</a></li>
+                                        <li><a href="#">Component alignment</a></li>
+                                        <li><a href="#">Fixed to top</a></li>
+                                        <li><a href="#">Fixed to bottom</a></li>
+                                        <li><a href="#">Static top</a></li>
+                                        <li><a href="#">Inverted navbar</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
+                        <!-- /.nav-collapse -->
                     </ul>
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="#search"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
