@@ -33,18 +33,21 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" ng-click="$event.preventDefault()" data-toggle="dropdown">Browse <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="/userprofile.html">View the user profile</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a href="#">Some action</a></li>
+                        <li><a href="#">Some other action</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu"> <a tabindex="-1" href="#">Hover me for more options</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Second level</a></li>
+                                <li class="dropdown-submenu"> <a href="#">Even More..</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">3rd level</a></li>
+                                        <li><a href="#">3rd level</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Second level</a></li>
+                                <li><a href="#">Second level</a></li>
                             </ul>
                         </li>
                     </ul>
