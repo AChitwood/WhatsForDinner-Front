@@ -16,6 +16,18 @@ footer {
     background: #f1f0f0;
 }
 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(122, 23, 23, 0.19);
+}
+
+body {
+    padding: 50px;
+    background-color: #fbf8f1;
+}
+
 .regs {
     padding: 90px;
     background-color: #fbf8f1;
@@ -56,12 +68,35 @@ footer {
     z-index: 999;
 }
 
-.navbar-inverse .navbar-collapse .topTitle {
-    background-color: blue;
-}
-
 .col-sm-12 {
     padding-top: 60px;
+}
+
+.col-md-7 h2 {
+    font-size: 26px;
+    width: 67%;
+    padding-top: 58px;
+}
+
+.col-md-12 {
+    background-image: url(/app/assets/images/images-2.jpeg);
+    position: fixed;
+    bottom: 10px;
+    /* left: 10px; */
+    width: 26%;
+    padding: 121px 5px;
+    text-align: center;
+    background-color: #712e2f;
+    border: 2px solid #ccd0d5;
+    /* height: 100px; */
+    border-radius: 2px;
+}
+
+
+/*-------------------------------------Navbar----------------------------------*/
+
+.navbar-inverse .navbar-collapse .topTitle {
+    background-color: blue;
 }
 
 .navbar-inverse .navbar-collapse {
@@ -69,13 +104,6 @@ footer {
     border-color: #395c82;
     background: #8c2022;
     z-index: 9999;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
 }
 
 .navbar.navbar-inverse {
@@ -87,47 +115,18 @@ footer {
     margin-bottom: 0px;
 }
 
-body {
-    padding: 50px;
-    background-color: #fbf8f1;
+
+/*-------------------------------------Carousel----------------------------------*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
-#bodyCheck {
-    background: #fbf8f1;
-    margin-top: 20px;
-}
 
-#login-dp {
-    min-width: 250px;
-    opacity: 1;
-    padding: 14px 14px 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-#login-dp .help-block {
-    font-size: 12px;
-}
-
-#login-dp .bottom {
-    background-color: white;
-    opacity: 1;
-    border-top: 1px solid #ddd;
-    clear: both;
-    padding: 14px;
-}
-
-#login-dp .social-buttons {
-    margin: 12px 0
-}
-
-#login-dp .social-buttons a {
-    width: 49%;
-}
-
-#login-dp .form-group {
-    margin-bottom: 10px;
-}
+/*-------------------------------------Button----------------------------------*/
 
 .btn-fb {
     color: #fff;
@@ -161,14 +160,7 @@ body {
 }
 
 
-/*
-.nav ul {
-    line-height: 20px;
-    font-size: 15px;
-    float: right;
-    position: relative;
-}
-*/
+/*-------------------------------------Container----------------------------------*/
 
 #container ul li {
     list-style-type: none;
@@ -201,36 +193,43 @@ body {
     background: #60000c;
 }
 
-#content {
-    width: 100%;
-    position: relative;
-    top: 490px;
-    height: 1500px;
-    z-index: 9;
-    background: #e6d8ba;
+
+/*-------------------------------------Login----------------------------------*/
+
+#login-dp {
+    min-width: 250px;
+    opacity: 1;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: white;
 }
 
-#image {
-    height: 90%;
-    width: 100%;
-    position: fixed;
-    bottom: 165px;
-    background-image: url(/app/assets/images/food7.jpg);
-    background-size: cover;
+#login-dp .help-block {
+    font-size: 12px;
 }
 
-.homepage {
-    margin: 0 auto;
-    text-align: center;
-    width: 60%;
+#login-dp .bottom {
+    background-color: white;
+    opacity: 1;
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
 }
 
-.jumbotron {
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 25px;
-    width: 60%;
+#login-dp .social-buttons {
+    margin: 12px 0
 }
+
+#login-dp .social-buttons a {
+    width: 49%;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+
+/*-------------------------------------Search----------------------------------*/
 
 #search {
     position: fixed;
@@ -299,18 +298,8 @@ body {
     font-size: 27px;
 }
 
-.col-md-7 h2 {
-    font-size: 26px;
-    width: 67%;
-    padding-top: 58px;
-}
 
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid rgba(122, 23, 23, 0.19);
-}
+/*-------------------------------------Drop down----------------------------------*/
 
 .dropdown-large {
     position: static !important;
