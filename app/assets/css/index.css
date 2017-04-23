@@ -39,6 +39,14 @@ footer {
     left: -15px;
 }
 
+.media-body {
+    font-size: 11px;
+}
+
+.media-heading {
+    font-size: 16px;
+}
+
 .topTitle {
     background-image: url(/app/assets/images/title.png);
     width: 99%;
@@ -75,7 +83,7 @@ footer {
 
 .col-sm-4 {
     width: 26.333333%;
-    padding-right: 34px;
+    padding-right: 48px;
     margin-left: -14px;
 }
 
