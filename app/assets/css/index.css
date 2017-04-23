@@ -30,6 +30,15 @@ footer {
     padding: 90px;
 }
 
+#rightSide {
+    width: 27.666667%;
+    right: -366px;
+}
+
+#leftSide {
+    left: -15px;
+}
+
 .topTitle {
     background-image: url(/app/assets/images/title.png);
     width: 99%;
@@ -64,6 +73,12 @@ footer {
     padding-top: 60px;
 }
 
+.col-sm-4 {
+    width: 26.333333%;
+    padding-right: 34px;
+    margin-left: -14px;
+}
+
 .navbar-inverse .navbar-collapse {
     padding-top: 16px;
     border-color: #395c82;
@@ -95,6 +110,7 @@ body {
 #bodyCheck {
     background: #fbf8f1;
     margin-top: 20px;
+    padding-top: 89px;
 }
 
 #login-dp {
