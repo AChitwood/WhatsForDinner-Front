@@ -122,13 +122,13 @@ footer {
 
 body {
     padding: 50px;
+    padding-top: 130px;
     background-color: #fbf8f1;
 }
 
 #bodyCheck {
     background: #fbf8f1;
-    margin-top: 20px;
-    padding-top: 89px;
+    padding-top: 46px;
 }
 
 #login-dp {
