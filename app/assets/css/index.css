@@ -16,6 +16,11 @@ footer {
     background: #f1f0f0;
 }
 
+#ranBut {
+    background-color: #8c2022;
+    background-image: none;
+}
+
 .regs {
     padding: 90px;
     background-color: #fbf8f1;
@@ -24,6 +29,11 @@ footer {
 .logincss {
     padding: 90px;
     background-color: #fbf8f1;
+}
+
+#random {
+    padding-bottom: 20px;
+    display: grid;
 }
 
 .recipecss {

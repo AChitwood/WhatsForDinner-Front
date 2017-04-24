@@ -14,14 +14,12 @@ MyApp.config(function ($routeProvider) {
             templateUrl: 'login/login.view.html '
             , controller: 'login.controller'
         })
-      /*  .when('/userprofile', {
-            templateUrl: 'userprofile/userprofile.html '
-            , controller: 'aboutController'
-        })*/
-
-    .when('/betaprofile', {
+        /*  .when('/userprofile', {
+              templateUrl: 'userprofile/userprofile.html '
+              , controller: 'aboutController'
+          })*/
+        .when('/betaprofile', {
             templateUrl: 'betaprofile/betaprofile.html '
-
         })
         // route for the contact page
         .when('/signup', {
