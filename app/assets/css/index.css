@@ -62,21 +62,9 @@ footer {
     width: 99%;
     border-top-right-radius: 75px;
     height: 87px;
+    background-color: #ffffff;
     margin-top: -24px;
     margin-right: 178px;
-    margin-left: -16px;
-    background-size: 215px;
-    z-index: 999;
-}
-
-.bottomTitle {
-    background-image: url(/app/assets/images/title.png);
-    background-color: #fbf8f1;
-    width: 99%;
-    height: 140px;
-    border-top-right-radius: 75px;
-    margin-top: -97px;
-    margin-right: 200px;
     margin-left: -16px;
     background-size: 215px;
     z-index: 999;
@@ -120,14 +108,15 @@ footer {
 }
 
 body {
+    height: 426px;
     padding: 50px;
     padding-top: 453px;
-    background-image: url(/app/assets/images/paper-06.jpg);
+    background-image: url(/app/assets/images/back.jpeg);
     background-attachment: fixed;
 }
 
 #bodyCheck {
-    padding-top: 46px;
+    padding-top: 160px;
 }
 
 #login-dp {
@@ -426,20 +415,25 @@ hr {
 /* animation */
 
 .fond {
+    height: 426px;
     position: absolute;
     padding-top: 25px;
-    top: 0;
+    top: 80px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(/app/assets/images/pina.jpeg);
+    background-size: cover;
+    background-image: url(/app/assets/images/food5.jpeg);
 }
 
 .first_div {
-    background-color: #f28e84;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    left: 43%;
+    width: 186px;
+    height: 181px;
+    /* margin-top: -2px; */
+    padding: -7px;
     border-radius: 50%;
     -webkit-animation: anim 0.7s 1 ease;
     -moz-animation: anim 0.7s 1 ease;
@@ -468,8 +462,8 @@ hr {
 }
 
 #logo {
-    height: 300px;
-    margin-left: -130px;
+    height: 325px;
+    margin-left: -156px;
 }
 
 .img {
@@ -478,22 +472,22 @@ hr {
 }
 
 .first_circle {
-    width: 220px;
-    height: 220px;
+    width: 186px;
+    height: 181px;
     border-radius: 50%;
-    padding: 10px;
-    margin-top: -12px;
+    padding: 3px;
+    margin-top: 25px;
     position: absolute;
-    left: 50%;
+    left: 52%;
     margin-left: -122px;
-    border-top: 2px solid #e84c3d;
-    border-right: 2px solid #e84c3d;
-    border-bottom: 2px solid #e84c3d;
+    border-top: 2px solid #8c2022;
+    border-right: 2px solid #731e1f;
+    border-bottom: 2px solid #901d21;
     border-left: 2px solid #ffffff;
-    -webkit-animation: anim_wifeo 1.4s infinite linear;
-    -moz-animation: anim_wifeo 1.4s infinite linear;
-    -ms-animation: anim_wifeo 1.4s infinite linear;
-    animation: anim_wifeo 1.4s infinite linear;
+    -webkit-animation: anim_wifeo 1.4s;
+    -moz-animation: anim_wifeo 1.4s;
+    -ms-animation: anim_wifeo 1.4s;
+    animation: anim_wifeo 1.4s;
 }
 
 @-webkit-keyframes anim {
