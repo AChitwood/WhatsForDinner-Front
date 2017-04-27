@@ -21,7 +21,7 @@
             vm.names = [
                 {
                     "Name": "Veggie Burger"
-                    , "description": "Low-calorie veggie burger that will keep you fit"
+                    , "description": "Low-calorie veggie burger"
                     , "image": "/app/assets/images/burger.jpeg"
                 }, {
                     "Name": "Smoked Salmon"
@@ -33,11 +33,11 @@
                     , "image": "/app/assets/images/food2.jpg"
                 }, {
                     "Name": "Raspberry Custard"
-                    , "description": "Craving dessert? Try this delicious custard"
+                    , "description": "Craving dessert?"
                     , "image": "/app/assets/images/food4.jpg"
                 }, {
                     "Name": "Chicken Parmasean"
-                    , "description": "Love chicken, pasta, and cheese? Try this delicious recipe"
+                    , "description": "Love chicken, pasta, and cheese?"
                     , "image": "/app/assets/images/food6.jpg"
                 }, {
                     "Name": "Juicy Burger"
@@ -45,7 +45,7 @@
                     , "image": "/app/assets/images/juicyburger.jpeg"
                 }, {
                     "Name": "Zesty Salad"
-                    , "description": "Trying to stay healthy? Try this easy-to-do salad"
+                    , "description": "Trying to stay healthy?"
                     , "image": "/app/assets/images/salad.jpg"
                 }, {
                     "Name": "Strawberry Parfait"
