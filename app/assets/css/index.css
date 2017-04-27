@@ -119,6 +119,10 @@ body {
     padding-top: 160px;
 }
 
+.panel-primary {
+    border-color: #8c2022;
+}
+
 #login-dp {
     min-width: 250px;
     opacity: 1;
@@ -251,6 +255,7 @@ body {
     text-align: center;
     border-radius: 25px;
     width: 60%;
+    background-color: transparent;
 }
 
 #search {

@@ -1,0 +1,53 @@
+<style>
+    .jasonsucks {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .ptitle {
+        padding: 0;
+    }
+
+    .subtitle {
+        opacity: 0.4;
+        /* Real browsers */
+        filter: alpha(opacity=60);
+        /* MSIE */
+        padding: 0;
+    }
+</style>
+<!-- First -->
+<div class="container-fluid bg-1 text-center">
+    <br>
+    <br> <img src="/app/assets/images/icontest2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="user" width="350" height="350">
+    <h3>{{vm.user.firstName}}</h3> </div>
+<!-- Second -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">About Me</h3>
+    <p class="jasonsucks">You could potentially have an about me section. About 150 characters. This was just a brainstormed idea. We could also scrap it entirely. Who really wants to read an about me on a recipe website!? Gah. Whatever. You have 150 characters </p>
+</div>
+<!-- Third -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Favorite Recipes</h3>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p class="jasonsucks">If the API returns images of food, this could be the most recent saved or favorited recipies</p>
+            <!-- Add potential recipe title overlay, if the api returns it --><img src="/app/assets/images/food1.jpg" class="img-responsive margin" style="width:100%" alt="Image"> </div>
+        <div class="col-sm-4">
+            <p class="jasonsucks">If the API returns images of food, this could be the most recent saved or favorited recipies</p>
+            <!-- Add potential recipe title overlay, if the api returns it --><img src="/app/assets/images/food4.jpg" class="img-responsive margin" style="width:100%" alt="Image"> </div>
+        <div class="col-sm-4">
+            <p class="jasonsucks">If the API returns images of food, this could be the most recent saved or favorited recipies</p>
+            <!-- Add potential recipe title overlay, if the api returns it --><img src="/app/assets/images/food5.jpeg" class="img-responsive margin" style="width:100%" alt="Image"> </div>
+    </div>
+</div>
+<!-- Potential pantry view (only viewable to logged in user) -->
+<div class="container-fluid bg-4 text-center">
+    <br>
+    <h3 class="ptitle">Your Pantry</h3>
+    <h5 class="subtitle">(This is only visible to you)</h5>
+    <br>
+    <p>Read the comments in the code</p>
+    <!-- Some interesting chart design. Probably the one you guys decide to use in the home page -->
+</div>

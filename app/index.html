@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- define angular app -->
-<html>
+<html ng-app="app">
 
 <head>
     <title>What's For Dinner?</title>
@@ -142,7 +142,6 @@
                             </ul>
                         </li>
                         <li class="active"><a href="#!/login"><i class="fa fa-pencil" aria-hidden="true"></i> Signup</a></li>
-                    </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -153,7 +152,7 @@
 <!-- End of Header -->
 <!--Angular Injection -->
 
-<body ng-app="app">
+<body>
     <div ng-view></div>
     <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
@@ -169,6 +168,7 @@
     <script src="home/home.controller.js"></script>
     <script src="login/login.controller.js"></script>
     <script src="register/register.controller.js"></script>
+    <script src="profile/profile.controller.js"></script>
 </body>
 <!--End of Angular Injection -->
 <!-- Footer -->
