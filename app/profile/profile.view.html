@@ -4,6 +4,9 @@
         margin: auto;
         font-size: 20px;
     }
+    .tab-content{
+        font-size: 40px;
+    }
 * {
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -84,14 +87,17 @@
         <li role="presentation"><a data-target="#tab4" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Settings</a></li>
     </ul>
     <!-- Tab panes -->
-    <div class="tab-content">
+    <x><div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="tab1">[Insert dynamic list of stuffs]</div>
-        <div role="tabpanel" class="tab-pane" id="tab2">[Insert dynamic list of favorites]</div>
+        <div role="tabpanel" class="tab-pane" id="tab2">
+	Veggie Burger<br>
+	Smoked Salmon<br>
+    ...Load more</div>
         <div role="tabpanel" class="tab-pane" id="tab3">[Insert dynamic list of user submitted stuffs]</div>
         <div role="tabpanel" class="tab-pane" id="tab4"><p>Username: {{vm.user.firstName}}</p>
                                                         <p>Password:&nbsp;</p>
                                                         <p>Contact:</p>
                                                         <p><span style="color: rgb(209, 72, 65);"><strong><u>Delete your account</u></strong></span></p>
         </div>
-    </div>
+        </div></x>
 </div>
