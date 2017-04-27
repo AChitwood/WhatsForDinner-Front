@@ -3,6 +3,10 @@
     width: auto;
 }
 
+.navbar-nav>li>.dropdown-menu {
+    margin-left: -2px;
+}
+
 #sidebar.affix-top {
     position: static;
 }
@@ -135,6 +139,8 @@ body {
     padding: 14px 14px 0;
     overflow: hidden;
     background-color: white;
+    top: 61px;
+    margin-right: -72px;
 }
 
 #login-dp .help-block {
