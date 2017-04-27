@@ -11,7 +11,7 @@ $(function () {
     });
     //Do not include! This prevents the form from submitting for DEMO purposes only!
     $('form').submit(function (event) {
-        event.preventDefault();
+        window.location.href = '#!/search';
         return false;
     })
 });
