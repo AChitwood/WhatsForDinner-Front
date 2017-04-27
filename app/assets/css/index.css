@@ -110,13 +110,13 @@ footer {
 body {
     height: 426px;
     padding: 50px;
-    padding-top: 453px;
+    padding-top: 76px;
     background-image: url(/app/assets/images/back.jpeg);
     background-attachment: fixed;
 }
 
 #bodyCheck {
-    padding-top: 160px;
+    padding-top: 500px;
 }
 
 .panel-primary {
