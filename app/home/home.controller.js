@@ -66,7 +66,7 @@
                 }, {
                     "Name": "Spaghetti"
                     , "description": "Craving Italian? No need to go to Italy"
-                    , "image": "/app/assets/images/spagetti.jpg" >>> >>> > origin / master
+                    , "image": "/app/assets/images/spagetti.jpg"
                 }];
         }
 
