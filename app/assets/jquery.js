@@ -5,14 +5,15 @@ $(function () {
         $('#search > form > input[type="search"]').focus();
     });
     $('#search, #search button.close').on('click keyup', function (event) {
-        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27 || event.target.className == 'btn btn-primary') {
             $(this).removeClass('open');
         }
     });
     //Do not include! This prevents the form from submitting for DEMO purposes only!
     $('form').submit(function (event) {
+        $(this).removeClass('open');
         window.location.href = '#!/search';
-        return false;
+        return true;
     })
 });
 $(window).scroll(function () {
