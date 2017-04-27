@@ -250,6 +250,10 @@ body {
     background-size: cover;
 }
 
+#homeImage {
+    height: 140px;
+}
+
 .homepage {
     margin: 0 auto;
     text-align: center;
