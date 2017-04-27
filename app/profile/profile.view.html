@@ -2,6 +2,7 @@
     .jasonsucks{
         max-width: 700px;
         margin: auto;
+        font-size: 20px;
     }
 * {
   -webkit-box-sizing:border-box;
@@ -17,7 +18,7 @@
   margin:50px auto;
   background-size: 100% 30px;
   position:relative;
-  padding-top:5px;
+  padding-top:0px;
   padding-left:15px;
   padding-right:20px;
   overflow:hidden;
@@ -70,7 +71,7 @@
 <!-- Second -->
 <div class="container-fluid bg-2 text-center">
     <h3 class="margin">About Me</h3>
-    <p class="jasonsucks">You could potentially have an about me section. About 150 characters. This was just a brainstormed idea. We could also scrap it entirely. Who really wants to read an about me on a recipe website!? Gah. Whatever. You have 150 characters </p>
+    <p class="jasonsucks">Welcome to my page! Here is where I keep all of my recipes and ingredients on the best website in the world. Follow me to keep up with what I'm doing. </p>
 </div>
 
 <!-- Notepad View updated -->
@@ -84,9 +85,13 @@
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="tab1">{{vm.user.firstName}} 1.Bread 2.Mustards 1.Mayo</div>
+        <div role="tabpanel" class="tab-pane active" id="tab1">1.Bread 2.Mustards 1.Mayo</div>
         <div role="tabpanel" class="tab-pane" id="tab2">1. Chocolate Cat <br>2.Scrambled eggs <br>3. Quiche</div>
         <div role="tabpanel" class="tab-pane" id="tab3">1. Super Secret Family Recipe I decided to host here</div>
-        <div role="tabpanel" class="tab-pane" id="tab4">Settings</div>
+        <div role="tabpanel" class="tab-pane" id="tab4"><p>Username: {{vm.user.firstName}}</p>
+                                                        <p>Password:&nbsp;</p>
+                                                        <p>Contact:</p>
+                                                        <p><span style="color: rgb(209, 72, 65);"><strong><u>Delete your account</u></strong></span></p>
+        </div>
     </div>
 </div>
