@@ -77,14 +77,14 @@
 <div class="container-fluid bg-4 text-center" id="notebook-paper">
     <br>
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a data-target="#tab1" role="tab" data-toggle="tab">Jenifer's Ingredients</a></li>
-        <li role="presentation"><a data-target="#tab2" role="tab" data-toggle="tab">Jenifer's Favorites</a></li>
-        <li role="presentation"><a data-target="#tab3" role="tab" data-toggle="tab">Jenifer's Stash</a></li>
-        <li role="presentation"><a data-target="#tab4" role="tab" data-toggle="tab">Jenifer's Settings</a></li>
+        <li role="presentation" class="active"><a data-target="#tab1" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Ingredients</a></li>
+        <li role="presentation"><a data-target="#tab2" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Favorites</a></li>
+        <li role="presentation"><a data-target="#tab3" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Stash</a></li>
+        <li role="presentation"><a data-target="#tab4" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Settings</a></li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="tab1">1.Bread 2.Mustards 1.Mayo</div>
+        <div role="tabpanel" class="tab-pane active" id="tab1">{{vm.user.firstName}} 1.Bread 2.Mustards 1.Mayo</div>
         <div role="tabpanel" class="tab-pane" id="tab2">1. Chocolate Cat <br>2.Scrambled eggs <br>3. Quiche</div>
         <div role="tabpanel" class="tab-pane" id="tab3">1. Super Secret Family Recipe I decided to host here</div>
         <div role="tabpanel" class="tab-pane" id="tab4">Settings</div>
