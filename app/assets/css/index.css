@@ -16,6 +16,11 @@
     font-weight: bold;
 }
 
+#loginRegister {
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+}
+
 #sidebar.affix {
     position: fixed;
     top: 80px;
@@ -857,7 +862,7 @@ body {
 }
 
 .col-list li:hover {
-    background-color: #F7F7F9;
+    background-color: #E3EAF3;
 }
 
 .option span {
