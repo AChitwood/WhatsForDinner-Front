@@ -20,50 +20,62 @@
         function testName() {
             vm.names = [
                 {
-                    "Name": "Veggie Burger"
-                    , "image": "Germany"
+                    "name": "Veggie Burger"
+                    , "description": "Low-calorie veggie burger that will keep you fit"
+                    , "image":
     }
                 , {
-                    "Name": "Smoked Salmon"
-                    , "image": "Sweden"
+                    "name": "Smoked Salmon"
+                    , "description": "Quick and easy to do smoke salmon"
+                    , "image":
     }
                 , {
-                    "Name": "Oven Baked Chicken"
-                    , "image": "Mexico"
+                    "name": "Oven Baked Chicken"
+                    , "description": "Southern-style oven baked chicken"
+                    , "image":
     }
                 , {
-                    "Name": "Raspberry Custard"
+                    "name": "Raspberry Custard"
+                    , "description": "Craving dessert? Try this delicious custard"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Chicken Parmasean"
+                    "name": "Chicken Parmasean"
+                    , "description": "Love chicken, pasta, and cheese? Try this delicious recipe"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Juicy Burger"
+                    "name": "Juicy Burger"
+                    , "description": "The name says it all..."
                     , "image": "Austria"
     }, {
-                    "Name": "Zesty Salad"
+                    "name": "Zesty Salad"
+                    , "description": "Trying to stay healthy? Try this easy-to-do salad"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Strawberry Parfait"
+                    "name": "Strawberry Parfait"
+                    , "description": "Make a delicious pastry for the family"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Chocolate Layered Cake"
+                    "name": "Chocolate Layered Cake"
+                    , "description": "Need chocolate?"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Berry Waffles"
+                    "name": "Berry Waffles"
+                    , "description": "Easy to do berry waffles"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Popcorn Chicken"
+                    "name": "Popcorn Chicken"
+                    , "description": "This chicken is popping"
                     , "image": "Austria"
     }
                 , {
-                    "Name": "Spaghetti"
+                    "name": "Spaghetti"
+                    , "description": "Craving Italian? No need to go to Italy"
                     , "image": "Austria"
     }
   ];
