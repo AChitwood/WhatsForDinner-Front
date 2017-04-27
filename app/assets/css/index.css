@@ -9,6 +9,7 @@
 
 #fontStyle {
     font-family: 'Handlee', cursive;
+    font-weight: bold;
 }
 
 #sidebar.affix {
@@ -109,6 +110,7 @@ footer {
     height: 79px;
     color: black;
     margin-bottom: 0px;
+    font-size: 15px;
 }
 
 body {
