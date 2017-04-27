@@ -7,6 +7,10 @@
     position: static;
 }
 
+#fontStyle {
+    font-family: 'Handlee', cursive;
+}
+
 #sidebar.affix {
     position: fixed;
     top: 80px;
@@ -59,13 +63,13 @@ footer {
 
 .topTitle {
     background-image: url(/app/assets/images/title.png);
-    width: 110%;
+    width: 99%;
     border-top-right-radius: 75px;
     height: 87px;
     background-color: #ffffff;
     margin-top: -24px;
     margin-right: 178px;
-    margin-left: -55px;
+    margin-left: -16px;
     background-size: 215px;
     z-index: 999;
 }
@@ -256,9 +260,6 @@ body {
     border-radius: 25px;
     width: 60%;
     background-color: transparent;
-    padding-top: 35px;
-    padding-bottom: 0;
-    margin-bottom: 0;
 }
 
 #search {
@@ -347,7 +348,7 @@ hr {
     left: 0;
     right: 0;
     bottom: -57px;
-    background-color: #546176;
+    background-color: #7b8fa0;
 }
 
 .dropdown-large {
