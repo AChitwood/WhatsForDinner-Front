@@ -59,13 +59,13 @@ footer {
 
 .topTitle {
     background-image: url(/app/assets/images/title.png);
-    width: 99%;
+    width: 110%;
     border-top-right-radius: 75px;
     height: 87px;
     background-color: #ffffff;
     margin-top: -24px;
     margin-right: 178px;
-    margin-left: -16px;
+    margin-left: -55px;
     background-size: 215px;
     z-index: 999;
 }
@@ -256,6 +256,9 @@ body {
     border-radius: 25px;
     width: 60%;
     background-color: transparent;
+    padding-top: 35px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #search {
@@ -344,7 +347,7 @@ hr {
     left: 0;
     right: 0;
     bottom: -57px;
-    background-color: #7b8fa0;
+    background-color: #546176;
 }
 
 .dropdown-large {
