@@ -21,50 +21,50 @@
             vm.names = [
                 {
                     "Name": "Veggie Burger"
-                    , "image": "Germany"
+                    , "image": "/app/assets/images/burger.jpeg"
     }
                 , {
                     "Name": "Smoked Salmon"
-                    , "image": "Sweden"
+                    , "image": "/app/assets/images/fish.jpeg"
     }
                 , {
                     "Name": "Oven Baked Chicken"
-                    , "image": "Mexico"
+                    , "image": "/app/assets/images/food2.jpg"
     }
                 , {
                     "Name": "Raspberry Custard"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/food4.jpg"
     }
                 , {
                     "Name": "Chicken Parmasean"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/food6.jpg"
     }
                 , {
                     "Name": "Juicy Burger"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/juicyburger.jpeg"
     }, {
                     "Name": "Zesty Salad"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/salad.jpg"
     }
                 , {
                     "Name": "Strawberry Parfait"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/sweet1.jpg"
     }
                 , {
                     "Name": "Chocolate Layered Cake"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/sweets2.jpeg"
     }
                 , {
                     "Name": "Berry Waffles"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/waffles.jpg"
     }
                 , {
                     "Name": "Popcorn Chicken"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/popcornChick.jpg"
     }
                 , {
                     "Name": "Spaghetti"
-                    , "image": "Austria"
+                    , "image": "/app/assets/images/spagetti.jpg"
     }
   ];
         }

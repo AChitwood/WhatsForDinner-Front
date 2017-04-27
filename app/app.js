@@ -20,6 +20,8 @@
             controller: 'ProfileController'
             , templateUrl: 'profile/profile.view.html'
             , controllerAs: 'vm'
+        }).when('/search', {
+            templateUrl: 'search/search.view.html'
         }).otherwise({
             redirectTo: '/login'
         });
