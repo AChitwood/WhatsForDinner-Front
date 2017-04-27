@@ -64,13 +64,13 @@ footer {
 
 .topTitle {
     background-image: url(/app/assets/images/title.png);
-    width: 99%;
+    width: 123%;
     border-top-right-radius: 75px;
     height: 87px;
     background-color: #ffffff;
     margin-top: -24px;
     margin-right: 178px;
-    margin-left: -16px;
+    margin-left: -60px;
     background-size: 215px;
     z-index: 999;
 }
