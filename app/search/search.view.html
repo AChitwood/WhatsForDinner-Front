@@ -1,4 +1,4 @@
-<div ng-init="friends = [{name:'John', phone:'555-1276'},
+<div ng-init="recipe = [{name:'John', phone:'555-1276'},
                          {name:'Mary', phone:'800-BIG-MARY'},
                          {name:'Mike', phone:'555-4321'},
                          {name:'Adam', phone:'555-5678'},
@@ -11,8 +11,8 @@
         <th>Name</th>
         <th>Phone</th>
     </tr>
-    <tr ng-repeat="friend in friends | filter:searchText">
-        <td>{{friend.name}}</td>
-        <td>{{friend.phone}}</td>
+    <tr ng-repeat="x in vm.recipe | filter:searchText">
+        <td>{{x.Name}}</td>
+        <td>{{x.description}}</td>
     </tr>
 </table>
