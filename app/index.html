@@ -106,8 +106,8 @@
                         <div id="search">
                             <button type="button" class="close">×</button>
                             <form>
-                                <input type="search" value="" placeholder="Search Recipes" />
-                                <button type="submit"  class="btn btn-primary">Search</button>
+                                <input type="search" id="myRecipe" value="" placeholder="Search Recipes" ng-model="searchText" />
+                                <button type="submit" class="btn btn-primary">Search</button>
                             </form>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
@@ -171,6 +171,7 @@
         <script src="login/login.controller.js"></script>
         <script src="register/register.controller.js"></script>
         <script src="profile/profile.controller.js"></script>
+        <script src="search/search.controller.js"></script>
     </body>
     <!--End of Angular Injection -->
     <!-- Footer -->

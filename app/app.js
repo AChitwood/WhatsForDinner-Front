@@ -22,6 +22,8 @@
             , controllerAs: 'vm'
         }).when('/search', {
             templateUrl: 'search/search.view.html'
+            , controller: 'SearchController'
+            , controllerAs: 'vm'
         }).otherwise({
             redirectTo: '/login'
         });
