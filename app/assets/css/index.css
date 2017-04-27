@@ -338,6 +338,15 @@ hr {
     border-top: 1px solid rgba(122, 23, 23, 0.19);
 }
 
+#divider {
+    height: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -57px;
+    background-color: #7b8fa0;
+}
+
 .dropdown-large {
     position: static !important;
 }
@@ -414,6 +423,11 @@ hr {
     .dropdown-menu-large .dropdown-header {
         padding: 3px 15px !important;
     }
+}
+
+#border {
+    height: 30px;
+    background-color: #8c2022;
 }
 
 
