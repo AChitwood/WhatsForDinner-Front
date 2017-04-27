@@ -12,7 +12,9 @@
         initController();
 
         function initController() {
-            loadCurrentUser();
+            if ($rootScope.globals.currentUser) {
+                loadCurrentUser();
+            }
             loadAllUsers();
             testName();
         }
