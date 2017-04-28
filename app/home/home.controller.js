@@ -152,12 +152,12 @@
             var headers = {
                 'Authorization': 'Basic ' + Base64.encode('foo' + ':' + 'bar')
             }
-            $http.get('http://uaf135145.ddns.uark.edu:3001/ingredient/getByName/Test2', {
+            $http.get('http://uaf135145.ddns.uark.edu:3001/', {
                 headers: headers
             }).then(function (response) {
-                alert("Working");
+                //                alert(JSON.stringify(response));
             }, function errorCallback(response) {
-                alert("error");
+                //                alert("error");
             });
         }
 
