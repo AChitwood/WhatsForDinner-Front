@@ -1,15 +1,23 @@
-<div id="leftSide" class="col-md-5">
-    <div class="row">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4" ng-repeat="x in vm.names">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">{{x.Name}}</div>
-                        <div class="panel-body"><img ng-src="{{x.image}}" id="homeImage" style="width:100%"></div>
-                        <div class="panel-footer">{{x.description}}</div>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row col-list">
+        <div id="recipe" class="col-md-4 t1" id="listReview" ng-repeat="x in vm.recipe | filter:searchText">
+            <div class="col-head text-center"> <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                <h2>{{x.Name}}</h2> </div>
+            <ul class="list-unstyled">
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span> Ingredients</p>
+                </li>
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span> {{x.Ingredients}}</p>
+                </li>
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span>Directions</p>
+                </li>
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span> {{x.Directions}}</p>
+                </li>
+            </ul>
         </div>
-        <br> </div>
+    </div>
 </div>
+<br>
