@@ -26,11 +26,13 @@
         top: 80px;
     }
 
+    #listReview {
+        margin-top: -23px;
+    }
+
     footer {
         background: #f1f0f0;
     }
-
-    #listReview {}
 
     #ranBut {
         background-color: #374358;
@@ -69,6 +71,7 @@
     }
 
     #rightSide {
+        top: 41px;
         width: 27.666667%;
         right: -366px;
     }
@@ -871,10 +874,6 @@
         color: rgba(162, 213, 0, 1);
         margin-left: 7px;
         margin-right: 7px;
-    }
-
-    #listReview {
-        margin-top: -45px;
     }
 
     .randomButton a {
