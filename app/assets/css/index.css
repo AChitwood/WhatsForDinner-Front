@@ -869,7 +869,7 @@ body {
     margin: 0;
 }
 
-.col-list li:hover {
+#withHoverList li:hover {
     background-color: #E3EAF3;
 }
 
@@ -881,4 +881,10 @@ body {
 
 #listReview {
     margin-top: -45px;
+}
+
+#searchHeading {
+    color: #bca082;
+    font-size: x-large;
+    font-weight: bolder;
 }
