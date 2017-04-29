@@ -31,7 +31,7 @@
                     </div>
                     <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home{{globals.user}}</a></li>
+                            <li><a href="#">Home</a></li>
                             <li class="dropdown dropdown-large"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                 <ul class="dropdown-menu dropdown-menu-large row">
                                     <li class="col-sm-3">
@@ -108,11 +108,11 @@
                                 <button type="submit" class="btn btn-primary">Search</button>
                             </form>
                         </div>
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right" ng-hide="globals.currentUser.currentUserSignIn">
                             <li>
                                 <p class="navbar-text">Already have an account?</p>
                             </li>
-                            <li class="dropdown"> <a href="#" ng-click="$event.preventDefault()" class="dropdown-toggle" data-toggle="dropdown"><b><i class="fa fa-user" aria-hidden="true"></i> Login</b> <span class="caret"></span></a>
+                            <li class="dropdown"> <a href="#!/login" ng-click="$event.preventDefault()" class="dropdown-toggle" data-toggle="dropdown"><b><i class="fa fa-user" aria-hidden="true"></i> Login</b> <span class="caret"></span></a>
                                 <ul id="login-dp" class="dropdown-menu">
                                     <li>
                                         <div class="row">
@@ -142,6 +142,10 @@
                                 </ul>
                             </li>
                             <li class="active"><a href="#!/register"><i class="fa fa-pencil" aria-hidden="true"></i> Signup</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" id="welcomeFont" ng-show="globals.currentUser.currentUserSignIn">
+                            <li class="active"><a href="#!/profile"><i class="fsa fa-pencil" aria-hidden="true">Welcome, </i> {{globals.user}}</a></li>
+                            <li class="active"><a href="#!/login"><i class="fa fa-pencil" aria-hidden="true"></i>Logout</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
