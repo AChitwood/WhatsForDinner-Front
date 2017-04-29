@@ -1,71 +1,73 @@
 <style>
-    .jasonsucks{
+    .jasonsucks {
         max-width: 700px;
         margin: auto;
         font-size: 20px;
     }
-    .tab-content{
+
+    .tab-content {
         font-size: 40px;
     }
-* {
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -ms-box-sizing:border-box;
-  -o-box-sizing:border-box;
-  box-sizing:border-box;
-}
-#notebook-paper {
-  width:960px;
-  height:1109px;
-  background: linear-gradient(to bottom,white 29px,#00b0d7 1px);
-  margin:50px auto;
-  background-size: 100% 30px;
-  position:relative;
-  padding-top:0px;
-  padding-left:15px;
-  padding-right:20px;
-  overflow:hidden;
-  border-radius:5px;
-  -webkit-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
-  -moz-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
-  -ms-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
-  -o-box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
-  box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
-  &:before {
-    content:'';
-    display:block;
-    position:absolute;
-    z-index:1;
-    top:0;
-    left:140px;
-    height:100%;
-    width:1px;
-    background:#db4034;
-  }
-  header {
-    height:150px;
-    width:100%;
-    background:white;
-    position:absolute;
-    top:0;
-    left:0;
-    h1 {
-      font-size:60px;
-      line-height:60px;
-      padding:127px 20px 0 160px;
-    }
-  }
-  #content {
-    margin-top:67px;
-    font-size:20px;
-    line-height:30px;
-    p {
-      margin:0 0 30px 0;
-    }
-  }
-}
-</style>
 
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #notebook-paper {
+        width: 960px;
+        height: 1109px;
+        background: linear-gradient(to bottom, white 29px, #00b0d7 1px);
+        margin: 50px auto;
+        background-size: 100% 30px;
+        position: relative;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 20px;
+        overflow: hidden;
+        border-radius: 5px;
+        -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+        -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+        -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+        -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 140px;
+            height: 100%;
+            width: 1px;
+            background: #db4034;
+        }
+        header {
+            height: 150px;
+            width: 100%;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            h1 {
+                font-size: 60px;
+                line-height: 60px;
+                padding: 127px 20px 0 160px;
+            }
+        }
+        #content {
+            margin-top: 67px;
+            font-size: 20px;
+            line-height: 30px;
+            p {
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+</style>
 <!-- First -->
 <div class="container-fluid bg-1 text-center">
     <br>
@@ -76,7 +78,6 @@
     <h3 class="margin">About Me</h3>
     <p class="jasonsucks">Welcome to my page! Here is where I keep all of my recipes and ingredients on the best website in the world. Follow me to keep up with what I'm doing. </p>
 </div>
-
 <!-- Notepad View updated -->
 <div class="container-fluid bg-4 text-center" id="notebook-paper">
     <br>
@@ -87,17 +88,19 @@
         <li role="presentation"><a data-target="#tab4" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Settings</a></li>
     </ul>
     <!-- Tab panes -->
-    <x><div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="tab1">[Insert dynamic list of stuffs]</div>
-        <div role="tabpanel" class="tab-pane" id="tab2">
-	Veggie Burger<br>
-	Smoked Salmon<br>
-    ...Load more</div>
-        <div role="tabpanel" class="tab-pane" id="tab3">[Insert dynamic list of user submitted stuffs]</div>
-        <div role="tabpanel" class="tab-pane" id="tab4"><p>Username: {{vm.user.firstName}}</p>
-                                                        <p>Password:&nbsp;</p>
-                                                        <p>Contact:</p>
-                                                        <p><span style="color: rgb(209, 72, 65);"><strong><u>Delete your account</u></strong></span></p>
+    <x>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab1">[Insert dynamic list of stuffs]</div>
+            <div role="tabpanel" class="tab-pane" id="tab2"> Veggie Burger
+                <br> Smoked Salmon
+                <br> ...Load more</div>
+            <div role="tabpanel" class="tab-pane" id="tab3">[Insert dynamic list of user submitted stuffs]</div>
+            <div role="tabpanel" class="tab-pane" id="tab4">
+                <p>Username: {{vm.user.firstName}}</p>
+                <p>Password:&nbsp;</p>
+                <p>Contact:</p>
+                <p><span style="color: rgb(209, 72, 65);"><strong><u>Delete your account</u></strong></span></p>
+            </div>
         </div>
-        </div></x>
+    </x>
 </div>

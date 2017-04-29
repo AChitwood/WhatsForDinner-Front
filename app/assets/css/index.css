@@ -882,3 +882,73 @@ body {
 #listReview {
     margin-top: -45px;
 }
+
+.randomButton a {
+    text-decoration: none;
+    color: #374358;
+}
+
+.randomButton .center {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.randomButton .button {
+    width: 250px;
+    height: 60px;
+    position: relative;
+}
+
+.randomButton .demo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 60px;
+    padding: 0 0 0 50px;
+    z-index: 2;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 4px 4px 4px 4px;
+    transition: width .7s;
+}
+
+.randomButton .discr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 60px;
+    z-index: 1;
+    background-color: #374358;
+    padding: 0 0 0 10px;
+    text-align: center;
+    line-height: 58px;
+    border-radius: 0 4px 4px 0;
+}
+
+.randomButton img {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 3;
+    transition: transform 1s;
+}
+
+.randomButton .button:hover img {
+    transform: rotate(360deg);
+}
+
+.randomButton .button:hover .demo {
+    width: 100px;
+    border-radius: 4px 0 0 4px;
+}
