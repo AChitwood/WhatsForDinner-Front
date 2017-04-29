@@ -31,7 +31,7 @@
     run.$inject = ['$rootScope', '$location', '$cookies', '$http', 'UserService'];
 
     function run($rootScope, $location, $cookies, $http, UserService) {
-        $rootScope.globals.currentUser.currentUserSignIn = false; // keep user logged in after page refresh
+//$rootScope.globals.currentUser.currentUserSignIn = false; // keep user logged in after page refresh
         $rootScope.globals = $cookies.getObject('globals') || {};
         if ($rootScope.globals.currentUser) {
             $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata;
@@ -42,13 +42,13 @@
             var loggedIn = $rootScope.globals.currentUser;
             if (restrictedPage && !loggedIn) {
                 $location.path('/');
-                $rootScope.globals.currentUser.currentUserSignIn = false;
+//                $rootScope.globals.currentUser.currentUserSignIn = false;
             }
             else if (loggedIn) {
                 UserService.GetByUsername($rootScope.globals.currentUser.username).then(function (user) {
                     console.log(user.firstName);
                     $rootScope.globals.user = user.firstName;
-                    $rootScope.globals.currentUser.currentUserSignIn = true;
+//                    $rootScope.globals.currentUser.currentUserSignIn = true;
                 });
             }
         });
