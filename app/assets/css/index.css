@@ -897,7 +897,7 @@
     }
 
     .randomButton .button {
-        width: 250px;
+        width: 275px;
         height: 60px;
         position: relative;
     }
@@ -909,7 +909,7 @@
         width: 200px;
         height: 60px;
         padding: 0 0 0 50px;
-        z-index: 2;
+        z-index: 3;
         background-color: #ffffff;
         text-align: center;
         line-height: 55px;
@@ -921,11 +921,27 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 100px;
+        width: 89px;
         height: 60px;
-        z-index: 1;
-        background-color: #374358;
-        padding: 0 0 0 10px;
+        z-index: 2;
+        background-color: #8c2022;
+        color: white;
+        padding: 0px 0 0 12px;
+        text-align: center;
+        line-height: 58px;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .randomButton .rep {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 60px;
+        z-index: 2;
+        color: white;
+        background-color: #8c2022;
+        padding: 0px 40px 0 0px;
         text-align: center;
         line-height: 58px;
         border-radius: 0 4px 4px 0;
@@ -946,7 +962,7 @@
     }
 
     .randomButton .button:hover .demo {
-        width: 100px;
+        width: 115px;
         border-radius: 4px 0 0 4px;
     }
 
