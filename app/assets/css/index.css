@@ -3,6 +3,10 @@
         width: auto;
     }
 
+    body {
+        transform: translate3d(0);
+    }
+
     .navbar-nav>li>.dropdown-menu {
         margin-left: -2px;
     }

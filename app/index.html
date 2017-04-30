@@ -14,7 +14,13 @@
     <lnk href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Project Libraries -->
-    <link rel="stylesheet " type="text/css " href="/app/assets/css/index.css" /> </head>
+    <link rel="stylesheet " type="text/css " href="/app/assets/css/index.css" />
+    <script src="/app/assets/jquery.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+    <script src="app.js"></script>
+</head>
 <!-- Header -->
 <div id="fontStyle">
     <header id="masthead">
@@ -159,14 +165,13 @@
 
     <body>
         <div ng-view></div>
-        <script src="/app/assets/jquery.js"></script>
-        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
-        <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
-        <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
-        <script src="app.js"></script>
         <script src="app-services/authentication.service.js"></script>
         <script src="app-services/flash.service.js"></script>
+        <meta name="description" content="A responsive folded flyer-like restaurant menu with some 3D" />
+        <meta name="keywords" content="css3, perspective, 3d, jquery, transform3d, responsive, template, restaurant, menu, leaflet, folded, flyer, concept" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <!-- Real user service that uses an api -->
         <!-- <script src="app-services/user.service.js"></script> -->
         <!-- Fake user service for demo that uses local storage -->

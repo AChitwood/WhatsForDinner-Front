@@ -1,106 +1,88 @@
-<style>
-    .jasonsucks {
-        max-width: 700px;
-        margin: auto;
-        font-size: 20px;
-    }
-
-    .tab-content {
-        font-size: 40px;
-    }
-
-    * {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    #notebook-paper {
-        width: 960px;
-        height: 1109px;
-        background: linear-gradient(to bottom, white 29px, #00b0d7 1px);
-        margin: 50px auto;
-        background-size: 100% 30px;
-        position: relative;
-        padding-top: 0px;
-        padding-left: 15px;
-        padding-right: 20px;
-        overflow: hidden;
-        border-radius: 5px;
-        -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
-        -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
-        -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
-        -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, .2), 0px 0px 6px rgba(0, 0, 0, .2);
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 140px;
-            height: 100%;
-            width: 1px;
-            background: #db4034;
-        }
-        header {
-            height: 150px;
-            width: 100%;
-            background: white;
-            position: absolute;
-            top: 0;
-            left: 0;
-            h1 {
-                font-size: 60px;
-                line-height: 60px;
-                padding: 127px 20px 0 160px;
-            }
-        }
-        #content {
-            margin-top: 67px;
-            font-size: 20px;
-            line-height: 30px;
-            p {
-                margin: 0 0 30px 0;
-            }
-        }
-    }
-</style>
-<!-- First -->
-<div class="container-fluid bg-1 text-center">
-    <br>
-    <br> <img src="/app/assets/images/icontest2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="user" width="350" height="350">
-    <h3>{{vm.user.firstName}}</h3> </div>
-<!-- Second -->
-<div class="container-fluid bg-2 text-center">
-    <h3 class="margin">About Me</h3>
-    <p class="jasonsucks">Welcome to my page! Here is where I keep all of my recipes and ingredients on the best website in the world. Follow me to keep up with what I'm doing. </p>
-</div>
-<!-- Notepad View updated -->
-<div class="container-fluid bg-4 text-center" id="notebook-paper">
-    <br>
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a data-target="#tab1" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Ingredients</a></li>
-        <li role="presentation"><a data-target="#tab2" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Favorites</a></li>
-        <li role="presentation"><a data-target="#tab3" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Stash</a></li>
-        <li role="presentation"><a data-target="#tab4" role="tab" data-toggle="tab">{{vm.user.firstName}}'s Settings</a></li>
-    </ul>
-    <!-- Tab panes -->
-    <x>
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="tab1">[Insert dynamic list of stuffs]</div>
-            <div role="tabpanel" class="tab-pane" id="tab2"> Veggie Burger
-                <br> Smoked Salmon
-                <br> ...Load more</div>
-            <div role="tabpanel" class="tab-pane" id="tab3">[Insert dynamic list of user submitted stuffs]</div>
-            <div role="tabpanel" class="tab-pane" id="tab4">
-                <p>Username: {{vm.user.firstName}}</p>
-                <p>Password:&nbsp;</p>
-                <p>Contact:</p>
-                <p><span style="color: rgb(209, 72, 65);"><strong><u>Delete your account</u></strong></span></p>
+<div class="container">
+    <section class="main">
+        <div id="rm-container" class="rm-container">
+            <div class="rm-wrapper">
+                <div class="rm-cover">
+                    <div class="rm-front">
+                        <div class="rm-content">
+                            <div class="rm-logo"></div>
+                            <h2>{{vm.user.firstName}}'s Profile</h2>
+                            <h3>Track ingredients &amp; Search recipes</h3> <a href="#" class="rm-button-open">Open your menu</a>
+                            <div class="rm-info">
+                                <p> <strong>You can save your personal recipes,</strong>
+                                    <br> edit your ingredients,
+                                    <br> and save your favorite recipes. </div>
+                        </div>
+                        <!-- /rm-content -->
+                    </div>
+                    <!-- /rm-front -->
+                    <div class="rm-back">
+                        <div class="rm-content">
+                            <h4>Your Ingredients</h4>
+                            <dl> <dt>Bella's Artichokes</dt>
+                                <dd>Roasted artichokes with chipotle aioli and cream cheese</dd> <dt>Bruschetta Blue Delight</dt>
+                                <dd>Blue cheese and citrus bruschetta</dd> <dt>Pomme Dulse</dt>
+                                <dd>Baked potatoes with crisped dulse</dd> <dt><a href="http://herbivoracious.com/2011/11/crostini-with-young-pecorino-grilled-figs-and-arugula-mint-pesto-recipe.html" class="rm-viewdetails" data-thumb="images/1.jpg">Green Love Crostini</a></dt>
+                                <dd>Crostini with young pecorino, grilled figs and arugula &amp; mint pesto</dd> <dt>Focaccia di Carciofi</dt>
+                                <dd>Artichoke focaccia with fresh thyme</dd>
+                            </dl>
+                        </div>
+                        <!-- /rm-content -->
+                        <div class="rm-overlay"></div>
+                    </div>
+                    <!-- /rm-back -->
+                </div>
+                <!-- /rm-cover -->
+                <div class="rm-middle" class="test">
+                    <div class="rm-inner" my-repeat-directive>
+                        <div class="rm-content">
+                            <h4>Your favorite recipes</h4>
+                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/burger.jpeg">Veggie Burger</a></dt>
+                                <dd>Low-calorie veggie burger</dd>
+                            </dl>
+                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/waffles.jpg">Berry Waffles</a></dt>
+                                <dd>Easy to do berry waffles</dd>
+                            </dl>
+                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/juicyburger.jpeg">Juicy Burger</a></dt>
+                                <dd>The name says it all...</dd>
+                            </dl>
+                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/sweet1.jpg">Strawberry Parfait</a></dt>
+                                <dd>Make a delicious pastry for the family</dd>
+                            </dl>
+                        </div>
+                        <!-- /rm-content -->
+                        <div class="rm-overlay "></div>
+                    </div>
+                    <!-- /rm-inner -->
+                </div>
+                <!-- /rm-middle -->
+                <div class="rm-right ">
+                    <div class="rm-front "> </div>
+                    <div class="rm-back "> <span class="rm-close ">Close</span>
+                        <div class="rm-content ">
+                            <h4>Your personal recipes</h4>
+                            <dl> <dt><a href="http://herbivoracious.com/2012/08/crepes-with-roasted-french-plums-yogurt-and-honey.html " class="rm-viewdetails " data-thumb="images/5.jpg ">French Plum Crepes</a></dt>
+                                <dd>Crepes with roasted french plums, yogurt &amp; honey</dd> <dt><a href="http://herbivoracious.com/2012/05/butterscotch-pudding-with-bittersweet-ganache-and-caramelize-white-chocolate-crunchies-recipe.html " class="rm-viewdetails " data-thumb="images/6.jpg ">Butterscotch Pudding</a></dt>
+                                <dd>Butterscotch pudding with bittersweet ganache and caramelize white chocolate crispies</dd> <dt><a href="http://herbivoracious.com/2009/12/gateaux-de-crepes-recipe.html " class="rm-viewdetails " data-thumb="images/12.jpg ">Chocolate Gâteau de Crêpes</a></dt>
+                                <dd>Gâteau de crêpes with chocolate pastry cream and dulce de leche</dd> <dt><a href="http://herbivoracious.com/2009/05/dutch-baby-with-sauteed-apples-giant-ovenbaked-pancakes-recipe.html " class="rm-viewdetails " data-thumb="images/10.jpg ">Dutch Baby With Sauteed Apples</a></dt>
+                                <dd>Dutch ginat oven-baked pancakes with sauteed apples</dd> <dt><a href="http://herbivoracious.com/2008/08/blueberry-napol.html " class="rm-viewdetails " data-thumb="images/7.jpg ">Blueberry Napoleon</a></dt>
+                                <dd>Blueberry Napoleon with crème fraîche and raspberry powder</dd> <dt><a href="http://herbivoracious.com/2008/09/rings-of-saturn.html " class="rm-viewdetails " data-thumb="images/2.jpg ">Rings of Saturn</a></dt>
+                                <dd>Saturn peach on challah french toast</dd> <dt><a href="http://herbivoracious.com/2008/04/recipe-atayef.html " class="rm-viewdetails " data-thumb="images/9.jpg ">Classic Atayef</a></dt>
+                                <dd>Syrian ricotta-filled dessert pancakes</dd>
+                            </dl>
+                        </div>
+                        <!-- /rm-content -->
+                    </div>
+                    <!-- /rm-back -->
+                </div>
+                <!-- /rm-right -->
             </div>
+            <!-- /rm-wrapper -->
         </div>
-    </x>
+        <!-- /rm-container -->
+    </section>
 </div>
+<script type="text/javascript " src="js/menu.js "></script>
+<script type="text/javascript ">
+    Menu.init();
+</script>
