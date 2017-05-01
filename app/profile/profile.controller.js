@@ -18,12 +18,17 @@
         }
 
         function fessCntrl() {
-            $rootScope.expenses = [{
-                exTitle: ""
-                , amount: ""
-                , typeOfShare: ""
-                , date: ""
+            if (!$rootScope.expenses) {
+                $rootScope.expenses = [{
+                    exTitle: ""
+                    , amount: ""
+                    , typeOfShare: ""
+                    , date: ""
                 }];
+            }
+            else {
+                console.log($rootScope.expenses);
+            }
             $rootScope.submitExpense = function (expenseInfo) {
                 $rootScope.expenses.push(expenseInfo);
             }

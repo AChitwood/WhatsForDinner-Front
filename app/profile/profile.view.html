@@ -29,20 +29,13 @@
                                             <div class="item">
                                                 <label for="amount">Amount of ingredient</label>
                                                 <input type="text" id="totAmt" name="amount" ng-model="expenseInfo.amount" /> </div>
-                                            <div class="item">
-                                                <label for="shareType">Type of Share</label>
-                                                <select name="shareType" ng-model="expenseInfo.typeOfShare">
-                                                    <option value="equal">Equal</option>
-                                                    <option value="unequal">Unequal</option>
-                                                </select>
-                                            </div>
                                         </div>
                                         <div class="rightDesc">
                                             <div class="item">
                                                 <label for="date">Expiration date</label>
                                                 <input type="text" id="date" name="date" ng-model="expenseInfo.date" /> </div>
                                         </div>
-                                        <input type="submit" value="AddExpense" /> </form>
+                                        <input type="submit" value="Add Ingredient" /> </form>
                                 </div><dt>{{expenseInfo.exTitle}}</dt> {{expenseInfo.amount}}{{expenseInfo.typeOfShare}}{{vm.description}}</dl>
                         </div>
                         <!-- /rm-content -->
