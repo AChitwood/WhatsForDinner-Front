@@ -1,9 +1,9 @@
 (function () {
     'use strict';
     angular.module('app').controller('ProfileController', ProfileController);
-    ProfileController.$inject = ['UserService', '$rootScope', '$scope'];
+    ProfileController.$inject = ['UserService', '$rootScope', '$scope', '$cookies'];
 
-    function ProfileController(UserService, $rootScope, $scope) {
+    function ProfileController(UserService, $rootScope, $scope, $cookies) {
         var vm = this;
         vm.user = null;
         vm.allUsers = [];
@@ -14,9 +14,20 @@
             loadCurrentUser();
             loadAllUsers();
             testName();
+            fessCntrl();
         }
 
-        function directive() {}
+        function fessCntrl() {
+            $rootScope.expenses = [{
+                exTitle: ""
+                , amount: ""
+                , typeOfShare: ""
+                , date: ""
+                }];
+            $rootScope.submitExpense = function (expenseInfo) {
+                $rootScope.expenses.push(expenseInfo);
+            }
+        };
 
         function loadCurrentUser() {
             UserService.GetByUsername($rootScope.globals.currentUser.username).then(function (user) {
@@ -37,6 +48,10 @@
         }
 
         function testName() {
+            var listInput = element(by.model('list'));
+            var output = element(by.binding('list'));
+            listInput.sendKeys('abc\ndef\nghi');
+            expect(output.getText()).toContain('[\n  "abc",\n  "def",\n  "ghi"\n]');
             vm.names = [
                 {
                     "Name": "Veggie Burger"
@@ -87,6 +102,10 @@
                     , "description": "Craving Italian? No need to go to Italy"
                     , "image": "/app/assets/images/spagetti.jpg"
                 }];
+        }
+
+        function testName() {
+            vm.description = "2 cans(15 oz each) ROSARITA® Premium Whole Black Beans, drained, rinsed 1 cup panko bread crumbs 1 / 2 cup Egg Beaters® Original 1 - 1 / 2 teaspoons Cajun seasoning 1 / 4 teaspoon salt 2 tablespoons Pure Wesson® Canola Oil, divided 6 tablespoons guacamole 6 whole wheat hamburger buns 6 slices fresh tomato Purchase ingredients from Peapod or Amazon ";
         }
     }
 })();

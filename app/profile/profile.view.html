@@ -19,13 +19,31 @@
                     <div class="rm-back">
                         <div class="rm-content">
                             <h4>Your Ingredients</h4>
-                            <dl> <dt>Bella's Artichokes</dt>
-                                <dd>Roasted artichokes with chipotle aioli and cream cheese</dd> <dt>Bruschetta Blue Delight</dt>
-                                <dd>Blue cheese and citrus bruschetta</dd> <dt>Pomme Dulse</dt>
-                                <dd>Baked potatoes with crisped dulse</dd> <dt><a href="http://herbivoracious.com/2011/11/crostini-with-young-pecorino-grilled-figs-and-arugula-mint-pesto-recipe.html" class="rm-viewdetails" data-thumb="images/1.jpg">Green Love Crostini</a></dt>
-                                <dd>Crostini with young pecorino, grilled figs and arugula &amp; mint pesto</dd> <dt>Focaccia di Carciofi</dt>
-                                <dd>Artichoke focaccia with fresh thyme</dd>
-                            </dl>
+                            <dl>
+                                <form ng-submit="submitExpense(expenseInfo)">
+                                    <div class="expenseDesc" ng-model="expenseInfo">
+                                        <div class="leftDesc">
+                                            <div class="item">
+                                                <label for="title">Your ingredient</label>
+                                                <input type="text" id="exTitle" name="title" ng-model="expenseInfo.exTitle" /> </div>
+                                            <div class="item">
+                                                <label for="amount">Amount of ingredient</label>
+                                                <input type="text" id="totAmt" name="amount" ng-model="expenseInfo.amount" /> </div>
+                                            <div class="item">
+                                                <label for="shareType">Type of Share</label>
+                                                <select name="shareType" ng-model="expenseInfo.typeOfShare">
+                                                    <option value="equal">Equal</option>
+                                                    <option value="unequal">Unequal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="rightDesc">
+                                            <div class="item">
+                                                <label for="date">Expiration date</label>
+                                                <input type="text" id="date" name="date" ng-model="expenseInfo.date" /> </div>
+                                        </div>
+                                        <input type="submit" value="AddExpense" /> </form>
+                                </div><dt>{{expenseInfo.exTitle}}</dt> {{expenseInfo.amount}}{{expenseInfo.typeOfShare}}{{vm.description}}</dl>
                         </div>
                         <!-- /rm-content -->
                         <div class="rm-overlay"></div>

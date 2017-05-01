@@ -24,6 +24,10 @@
             templateUrl: 'search/search.view.html'
             , controller: 'SearchController'
             , controllerAs: 'vm'
+        }).when('/click', {
+            templateUrl: 'click/click.view.html'
+            , controller: 'ClickController'
+            , controllerAs: 'vm'
         }).otherwise({
             redirectTo: '/'
         });
