@@ -26,9 +26,6 @@
                     , date: ""
                 }];
             }
-            else {
-                console.log($rootScope.expenses);
-            }
             $rootScope.submitExpense = function (expenseInfo) {
                 $rootScope.expenses.push(expenseInfo);
             }
@@ -110,7 +107,35 @@
         }
 
         function testName() {
-            vm.description = "2 cans(15 oz each) ROSARITA® Premium Whole Black Beans, drained, rinsed 1 cup panko bread crumbs 1 / 2 cup Egg Beaters® Original 1 - 1 / 2 teaspoons Cajun seasoning 1 / 4 teaspoon salt 2 tablespoons Pure Wesson® Canola Oil, divided 6 tablespoons guacamole 6 whole wheat hamburger buns 6 slices fresh tomato Purchase ingredients from Peapod or Amazon ";
+            vm.something = [{
+                exTitle: "Chicken Breast "
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }, {
+                exTitle: "2% Milk  "
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }, {
+                exTitle: "Parmasean Cheese "
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }, {
+                exTitle: "Turkey Breast"
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }, {
+                exTitle: "Lettuce"
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }, {
+                exTitle: "Water"
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }, {
+                exTitle: "Paprika"
+                , amount: "3 pounds"
+                , date: "11-20-2017"
+                }];
         }
     }
 })();

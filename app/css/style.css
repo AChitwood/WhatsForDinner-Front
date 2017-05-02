@@ -116,7 +116,7 @@ a.rm-button-open,
 
 .rm-content h2 {
     letter-spacing: 2px;
-    font-size: 26px;
+    font-size: 33px;
     /* text-shadow: 1px 1px 0 #fff, 3px 3px 0 #8c2022; */
 }
 
@@ -134,7 +134,7 @@ a.rm-button-open,
 
 .rm-content h4 {
     margin: 0 0 20px 0;
-    font-size: 16px;
+    font-size: 21px;
     padding-bottom: 10px;
     color: #323b4c;
     border-bottom: 4px double #8c2022;
@@ -192,7 +192,6 @@ a.rm-button-open:hover {
 }
 
 a.rm-viewdetails:before {
-    content: '\56';
     font-style: normal;
     font-weight: normal;
     speak: none;
@@ -233,6 +232,7 @@ a.rm-viewdetails:before {
     background-repeat: no-repeat;
     background-position: center center;
     float: left;
+    background-size: 153px;
     margin: 0 20px 0 0;
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(255, 255, 255, 0.9);
 }

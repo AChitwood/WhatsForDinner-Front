@@ -19,28 +19,25 @@
                     <div class="rm-back">
                         <div class="rm-content">
                             <h4>Your Ingredients</h4>
-                            <dl>
-                                <form ng-submit="submitExpense(expenseInfo)">
-                                    <div class="expenseDesc" ng-model="expenseInfo">
-                                        <div class="leftDesc">
-                                            <div class="item">
-                                                <label for="title">Your ingredient</label>
-                                                <input type="text" id="exTitle" name="title" ng-model="expenseInfo.exTitle" /> </div>
-                                            <div class="item">
-                                                <label for="amount">Amount of ingredient</label>
-                                                <input type="text" id="totAmt" name="amount" ng-model="expenseInfo.amount" /> </div>
-                                        </div>
-                                        <div class="rightDesc">
-                                            <div class="item">
-                                                <label for="date">Expiration date</label>
-                                                <input type="text" id="date" name="date" ng-model="expenseInfo.date" /> </div>
-                                        </div>
-                                        <input type="submit" value="Add Ingredient" /> </form>
-                                </div><dt>{{expenseInfo.exTitle}}</dt> {{expenseInfo.amount}}{{expenseInfo.typeOfShare}}{{vm.description}}</dl>
+                            <form ng-submit="submitExpense(expenseInfo)" class="clearBoth">
+                                <div class="expenseDesc" ng-model="expenseInfo">
+                                    <div class="leftDesc">
+                                        <div class="item">
+                                            <label for="title">Your ingredient</label>
+                                            <input type="text" id="exTitle" name="title" ng-model="expenseInfo.exTitle" class="clearBoth" /> </div>
+                                        <div class="item">
+                                            <label for="amount">Amount of ingredient</label>
+                                            <input type="text" id="totAmt" name="amount" ng-model="expenseInfo.amount" /> </div>
+                                    </div>
+                                    <div class="rightDesc">
+                                        <div class="item">
+                                            <label for="date">Expiration date</label>
+                                            <input type="text" id="date" name="date" ng-model="expenseInfo.date" class="clearBoth" /> </div>
+                                    </div>
+                                    <input type="submit" value="Add Ingredient" class="clearBoth" /> <dt ng-repeat="x in vm.something">{{x.exTitle}}</dt> </div>
+                            </form>
                         </div>
-                        <!-- /rm-content -->
-                        <div class="rm-overlay"></div>
-                    </div>
+                        <!-- /rm-content --><dt ng-repeat="y in expenses">{{y.exTitle}}</dt></div>
                     <!-- /rm-back -->
                 </div>
                 <!-- /rm-cover -->
@@ -48,17 +45,32 @@
                     <div class="rm-inner" my-repeat-directive>
                         <div class="rm-content">
                             <h4>Your favorite recipes</h4>
-                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/burger.jpeg">Veggie Burger</a></dt>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/burger.jpeg">Veggie Burger</a></dt>
                                 <dd>Low-calorie veggie burger</dd>
                             </dl>
-                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/waffles.jpg">Berry Waffles</a></dt>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/waffles.jpg">Berry Waffles</a></dt>
                                 <dd>Easy to do berry waffles</dd>
                             </dl>
-                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/juicyburger.jpeg">Juicy Burger</a></dt>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/juicyburger.jpeg">Juicy Burger</a></dt>
                                 <dd>The name says it all...</dd>
                             </dl>
-                            <dl> <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html" class="rm-viewdetails " data-thumb="/app/assets/images/sweet1.jpg">Strawberry Parfait</a></dt>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/sweet1.jpg">Strawberry Parfait</a></dt>
                                 <dd>Make a delicious pastry for the family</dd>
+                            </dl>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/spagetti.jpg">Spaghetti </a></dt>
+                                <dd>Craving Italian? No need to go to Italy</dd>
+                            </dl>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/food6.jpg">Chicken Parmasean</a></dt>
+                                <dd>Love chicken, pasta, and cheese?</dd>
+                            </dl>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/food2.jpg">Oven Baked Chicken</a></dt>
+                                <dd>Southern-style oven baked chicken</dd>
+                            </dl>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/fish.jpeg">Smoked Salmon</a></dt>
+                                <dd>Quick and easy to do smoke salmon</dd>
+                            </dl>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="/app/assets/images/popcornChick.jpg">Popcorn Chicken</a></dt>
+                                <dd>This chicken is popping</dd>
                             </dl>
                         </div>
                         <!-- /rm-content -->
@@ -72,13 +84,13 @@
                     <div class="rm-back "> <span class="rm-close ">Close</span>
                         <div class="rm-content ">
                             <h4>Your personal recipes</h4>
-                            <dl> <dt><a href="http://herbivoracious.com/2012/08/crepes-with-roasted-french-plums-yogurt-and-honey.html " class="rm-viewdetails " data-thumb="images/5.jpg ">French Plum Crepes</a></dt>
-                                <dd>Crepes with roasted french plums, yogurt &amp; honey</dd> <dt><a href="http://herbivoracious.com/2012/05/butterscotch-pudding-with-bittersweet-ganache-and-caramelize-white-chocolate-crunchies-recipe.html " class="rm-viewdetails " data-thumb="images/6.jpg ">Butterscotch Pudding</a></dt>
-                                <dd>Butterscotch pudding with bittersweet ganache and caramelize white chocolate crispies</dd> <dt><a href="http://herbivoracious.com/2009/12/gateaux-de-crepes-recipe.html " class="rm-viewdetails " data-thumb="images/12.jpg ">Chocolate Gâteau de Crêpes</a></dt>
-                                <dd>Gâteau de crêpes with chocolate pastry cream and dulce de leche</dd> <dt><a href="http://herbivoracious.com/2009/05/dutch-baby-with-sauteed-apples-giant-ovenbaked-pancakes-recipe.html " class="rm-viewdetails " data-thumb="images/10.jpg ">Dutch Baby With Sauteed Apples</a></dt>
-                                <dd>Dutch ginat oven-baked pancakes with sauteed apples</dd> <dt><a href="http://herbivoracious.com/2008/08/blueberry-napol.html " class="rm-viewdetails " data-thumb="images/7.jpg ">Blueberry Napoleon</a></dt>
-                                <dd>Blueberry Napoleon with crème fraîche and raspberry powder</dd> <dt><a href="http://herbivoracious.com/2008/09/rings-of-saturn.html " class="rm-viewdetails " data-thumb="images/2.jpg ">Rings of Saturn</a></dt>
-                                <dd>Saturn peach on challah french toast</dd> <dt><a href="http://herbivoracious.com/2008/04/recipe-atayef.html " class="rm-viewdetails " data-thumb="images/9.jpg ">Classic Atayef</a></dt>
+                            <dl> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="images/5.jpg ">French Plum Crepes</a></dt>
+                                <dd>Crepes with roasted french plums, yogurt &amp; honey</dd> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="images/6.jpg ">Butterscotch Pudding</a></dt>
+                                <dd>Butterscotch pudding with bittersweet ganache and caramelize white chocolate crispies</dd> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="images/12.jpg ">Chocolate Gâteau de Crêpes</a></dt>
+                                <dd>Gâteau de crêpes with chocolate pastry cream and dulce de leche</dd> <dt><a href="#!/click" class="rm-viewdetails " data-thumb="images/10.jpg ">Dutch Baby With Sauteed Apples</a></dt>
+                                <dd>Dutch ginat oven-baked pancakes with sauteed apples</dd> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="images/7.jpg ">Blueberry Napoleon</a></dt>
+                                <dd>Blueberry Napoleon with crème fraîche and raspberry powder</dd> <dt><a href="#!/click"  class="rm-viewdetails " data-thumb="images/2.jpg ">Rings of Saturn</a></dt>
+                                <dd>Saturn peach on challah french toast</dd> <dt><a href="#!/click " class="rm-viewdetails " data-thumb="images/9.jpg ">Classic Atayef</a></dt>
                                 <dd>Syrian ricotta-filled dessert pancakes</dd>
                             </dl>
                         </div>
