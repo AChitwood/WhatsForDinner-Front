@@ -15,7 +15,7 @@
                     <h3>Suggested Recipes</h3>
                     <div class="col-sm-4" ng-repeat="x in Names">
                         <div class="panel panel-primary">
-                            <div class="panel-heading"><a href="#!/click" ng-click="getColorCtrlScope().search.Name = x.title;"> {{ x.title }}</a></div>
+                            <div class="panel-heading"><a href="#!/click" ng-click="getColorCtrlScope().search.Name = x.title;" id="linkColor"> {{ x.title }}</a></div>
                             <div class="panel-body"><img ng-src="{{x.image}}" id="homeImage" style="width:100%"></div>
                             <div class="panel-footer">{{x.description}}</div>
                         </div>

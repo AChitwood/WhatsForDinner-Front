@@ -75,7 +75,7 @@
     }
 
     #rightSide {
-        top: 41px;
+        top: 62px;
         width: 27.666667%;
         right: -366px;
     }
@@ -160,7 +160,7 @@
     }
 
     #bodyCheck {
-        padding-top: 500px;
+        padding-top: 446px;
     }
 
     .panel-primary {
@@ -393,9 +393,16 @@
     .h5,
     .h6 {
         font-family: 'Handlee', cursive;
-        font-weight: 500;
+        font-weight: 900;
         line-height: 1.1;
         color: #2d2d2d;
+    }
+
+    h3,
+    .h3 {
+        font-size: 39px;
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
     }
 
     hr {
@@ -978,4 +985,13 @@
         border: 1px solid transparent;
         border-radius: 4px;
         text-align: center;
+    }
+
+    #linkColor:hover {
+        color: #e4e6ea;
+    }
+
+    #linkColor {
+        text-decoration: none;
+        color: white;
     }
